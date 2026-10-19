@@ -1,0 +1,73 @@
+{
+  "case": "drain_stop",
+  "run": 1,
+  "background": {
+    "normal": 1657
+  },
+  "successfulChangedWorkerRequests": 0,
+  "inFlightReplayedRequests": 0,
+  "inFlightReplayedBackgroundRequests": 0,
+  "delayedChangedWorkerBackgroundRequests": 0,
+  "probe": {
+    "requestId": "probe-a959de31a9fa49ddbfd1e77e3008be13",
+    "clientCalls": 1,
+    "clientSuccess": true,
+    "clientElapsedMs": 2606.913199999326,
+    "clientInstance": "tomcat1",
+    "tomcatTrace": [
+      {
+        "event": "BEGIN",
+        "wall_ms": "1792417868534",
+        "id": "probe-a959de31a9fa49ddbfd1e77e3008be13",
+        "instance": "tomcat1",
+        "active": "5",
+        "source": "tomcat1"
+      },
+      {
+        "event": "END",
+        "wall_ms": "1792417871136",
+        "id": "probe-a959de31a9fa49ddbfd1e77e3008be13",
+        "instance": "tomcat1",
+        "active": "0",
+        "status": "200",
+        "elapsed_ms": "2601.076057",
+        "source": "tomcat1"
+      }
+    ],
+    "apacheAccess": [
+      {
+        "wall_ms": "1792417868534",
+        "id": "probe-a959de31a9fa49ddbfd1e77e3008be13",
+        "status": "200",
+        "duration_us": "2601959",
+        "first": "tomcat1",
+        "last": "tomcat1",
+        "first_busy": "0",
+        "last_busy": "0",
+        "first_errors": "0",
+        "last_errors": "0",
+        "source": "apache1"
+      }
+    ],
+    "haproxyAccess": [
+      {
+        "id": "probe-a959de31a9fa49ddbfd1e77e3008be13",
+        "status": "200",
+        "server": "apache1",
+        "retries": "0",
+        "queue_ms": "0",
+        "connect_ms": "0",
+        "response_ms": "2602",
+        "active_ms": "2603",
+        "source": "haproxy"
+      }
+    ],
+    "oneFrontRequestNoRetry": true,
+    "newRequestsSentAfterExclude": 965,
+    "newRequestsCompletedOnSurvivor": 965,
+    "newRequestsReachedExcludedTarget": 0,
+    "confirmed": true
+  },
+  "error": null,
+  "examples": []
+}

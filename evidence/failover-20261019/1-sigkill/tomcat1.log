@@ -1,0 +1,673 @@
+19-Oct-2026 13:50:31.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.60
+19-Oct-2026 13:50:31.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 9 2026 22:35:59 UTC
+19-Oct-2026 13:50:31.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.60.0
+19-Oct-2026 13:50:31.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.6.87.2-microsoft-standard-WSL2
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.12.1+1-LTS
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+19-Oct-2026 13:50:31.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+19-Oct-2026 13:50:31.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms256m
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx512m
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.tomcat.util.digester.PROPERTY_SOURCE=org.apache.tomcat.util.digester.EnvironmentPropertySource
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2026 13:50:31.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Oct-2026 13:50:31.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Oct-2026 13:50:31.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+19-Oct-2026 13:50:31.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+19-Oct-2026 13:50:31.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+19-Oct-2026 13:50:31.454 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Oct-2026 13:50:31.460 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+19-Oct-2026 13:50:31.461 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [692] milliseconds
+19-Oct-2026 13:50:31.529 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2026 13:50:31.529 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.60]
+19-Oct-2026 13:50:31.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/ROOT]
+19-Oct-2026 13:50:33.447 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2026-10-19T13:50:34.367Z  INFO 1 --- [           main] local.poc.Application                    : Starting Application using Java 21.0.12.1 with PID 1 (/usr/local/tomcat/webapps/ROOT/WEB-INF/classes started by ? in /usr/local/tomcat)
+2026-10-19T13:50:34.370Z  INFO 1 --- [           main] local.poc.Application                    : No active profile set, falling back to 1 default profile: "default"
+2026-10-19T13:50:35.558Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1116 ms
+2026-10-19T13:50:36.869Z  INFO 1 --- [           main] local.poc.Application                    : Started Application in 3.112 seconds (process running for 6.304)
+19-Oct-2026 13:50:36.992 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/ROOT] has finished in [5,454] ms
+19-Oct-2026 13:50:36.994 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Oct-2026 13:50:37.035 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+19-Oct-2026 13:50:37.038 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5577] milliseconds
+2026-10-19T13:50:37.235Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-19T13:50:37.236Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-19T13:50:37.269Z  INFO 1 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-19T13:50:37.444Z  INFO 1 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6dff8793
+2026-10-19T13:50:37.445Z  INFO 1 --- [nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+POC_TRACE event=BEGIN wall_ms=1792417837893 id=bg-060607575fc04835a42a377533c9f022 instance=tomcat1 active=1
+POC_TRACE event=BEGIN wall_ms=1792417837913 id=bg-ff6f61ea6e9846b3a0e277b7eb42ddc4 instance=tomcat1 active=2
+POC_TRACE event=BEGIN wall_ms=1792417837932 id=bg-b829d4cdcec84ae1b103100f831269ac instance=tomcat1 active=3
+POC_TRACE event=BEGIN wall_ms=1792417837954 id=bg-11e78c14b8644d0d9dfe7fc9c37da8aa instance=tomcat1 active=4
+POC_TRACE event=BEGIN wall_ms=1792417837973 id=bg-952eacb083fe4b8baae594b689a90496 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417837993 id=bg-1558c66af2034149a4d79321cd8719d1 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417837993 id=bg-b60c7144e7a64c1d9aa5979660477674 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417837999 id=bg-060607575fc04835a42a377533c9f022 instance=tomcat1 active=6 status=200 elapsed_ms=106.683073
+POC_TRACE event=END wall_ms=1792417838014 id=bg-ff6f61ea6e9846b3a0e277b7eb42ddc4 instance=tomcat1 active=5 status=200 elapsed_ms=101.067956
+POC_TRACE event=END wall_ms=1792417838033 id=bg-b829d4cdcec84ae1b103100f831269ac instance=tomcat1 active=4 status=200 elapsed_ms=100.837289
+POC_TRACE event=BEGIN wall_ms=1792417838037 id=bg-5dd1efa368054b7db76610755468e56d instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838037 id=bg-6923fc09adcd44658ef06a875e2a9a7c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838055 id=bg-11e78c14b8644d0d9dfe7fc9c37da8aa instance=tomcat1 active=5 status=200 elapsed_ms=100.965736
+POC_TRACE event=END wall_ms=1792417838074 id=bg-952eacb083fe4b8baae594b689a90496 instance=tomcat1 active=4 status=200 elapsed_ms=101.330112
+POC_TRACE event=BEGIN wall_ms=1792417838077 id=bg-ad2826894c0549e98182326e9d0aab7d instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838077 id=bg-ee1971facc234661869235e1697cceab instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838093 id=bg-b60c7144e7a64c1d9aa5979660477674 instance=tomcat1 active=5 status=200 elapsed_ms=100.679683
+POC_TRACE event=END wall_ms=1792417838094 id=bg-1558c66af2034149a4d79321cd8719d1 instance=tomcat1 active=4 status=200 elapsed_ms=101.290358
+POC_TRACE event=BEGIN wall_ms=1792417838123 id=bg-efb76acee2a14778964b1888d0553153 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838124 id=bg-e3ec34df4da346ccb1c805588fd0b5cb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838138 id=bg-6923fc09adcd44658ef06a875e2a9a7c instance=tomcat1 active=5 status=200 elapsed_ms=101.460259
+POC_TRACE event=END wall_ms=1792417838138 id=bg-5dd1efa368054b7db76610755468e56d instance=tomcat1 active=4 status=200 elapsed_ms=101.707917
+POC_TRACE event=BEGIN wall_ms=1792417838163 id=bg-51523c89fac64b43a2f9edbf51ef100f instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838163 id=bg-af34989e734a4bf9991e2968f9b99721 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838178 id=bg-ee1971facc234661869235e1697cceab instance=tomcat1 active=5 status=200 elapsed_ms=100.927972
+POC_TRACE event=END wall_ms=1792417838178 id=bg-ad2826894c0549e98182326e9d0aab7d instance=tomcat1 active=4 status=200 elapsed_ms=101.251397
+POC_TRACE event=BEGIN wall_ms=1792417838202 id=bg-03344b66f1eb46b39b0c04c6f703316e instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838202 id=bg-aea13923e42c4f5fa2168c16f76c4bee instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838224 id=bg-efb76acee2a14778964b1888d0553153 instance=tomcat1 active=5 status=200 elapsed_ms=100.911285
+POC_TRACE event=END wall_ms=1792417838224 id=bg-e3ec34df4da346ccb1c805588fd0b5cb instance=tomcat1 active=4 status=200 elapsed_ms=100.78255
+POC_TRACE event=BEGIN wall_ms=1792417838228 id=bg-9191c1abac674f4296ffbb511c162f5e instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838246 id=bg-4a1ab1e9d99e4dee87d2b9891ea117c6 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838264 id=bg-51523c89fac64b43a2f9edbf51ef100f instance=tomcat1 active=5 status=200 elapsed_ms=101.099699
+POC_TRACE event=END wall_ms=1792417838264 id=bg-af34989e734a4bf9991e2968f9b99721 instance=tomcat1 active=4 status=200 elapsed_ms=101.074794
+POC_TRACE event=END wall_ms=1792417838303 id=bg-aea13923e42c4f5fa2168c16f76c4bee instance=tomcat1 active=3 status=200 elapsed_ms=100.784272
+POC_TRACE event=END wall_ms=1792417838303 id=bg-03344b66f1eb46b39b0c04c6f703316e instance=tomcat1 active=2 status=200 elapsed_ms=101.366173
+POC_TRACE event=BEGIN wall_ms=1792417838307 id=bg-b12f9416012d48198bbb824408eac96b instance=tomcat1 active=3
+POC_TRACE event=BEGIN wall_ms=1792417838307 id=bg-dabf630589244d6aa34b388617fa00a0 instance=tomcat1 active=4
+POC_TRACE event=BEGIN wall_ms=1792417838307 id=bg-872d9c751bb046b9903dcfe898bbc062 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838328 id=bg-4ece25428d22496d82953afb8df2b783 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838329 id=bg-9191c1abac674f4296ffbb511c162f5e instance=tomcat1 active=5 status=200 elapsed_ms=101.050373
+POC_TRACE event=END wall_ms=1792417838347 id=bg-4a1ab1e9d99e4dee87d2b9891ea117c6 instance=tomcat1 active=4 status=200 elapsed_ms=101.086105
+POC_TRACE event=BEGIN wall_ms=1792417838350 id=bg-ac37a2977bf54802abf2017096a406bf instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838371 id=bg-3508590c9bf14b4cb38f0791ddbbdf91 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417838393 id=bg-be88d04ee3bd42e0a4b0b80f35c424d4 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417838408 id=bg-dabf630589244d6aa34b388617fa00a0 instance=tomcat1 active=6 status=200 elapsed_ms=100.67021
+POC_TRACE event=END wall_ms=1792417838408 id=bg-872d9c751bb046b9903dcfe898bbc062 instance=tomcat1 active=5 status=200 elapsed_ms=100.935036
+POC_TRACE event=END wall_ms=1792417838408 id=bg-b12f9416012d48198bbb824408eac96b instance=tomcat1 active=4 status=200 elapsed_ms=101.233896
+POC_TRACE event=BEGIN wall_ms=1792417838411 id=bg-688fcd041bf144e294cd50dfa1119914 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838429 id=bg-4ece25428d22496d82953afb8df2b783 instance=tomcat1 active=4 status=200 elapsed_ms=101.338743
+POC_TRACE event=BEGIN wall_ms=1792417838433 id=bg-d7508eb567d642728e64641cb46009cb instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838451 id=bg-ac37a2977bf54802abf2017096a406bf instance=tomcat1 active=4 status=200 elapsed_ms=100.954692
+POC_TRACE event=BEGIN wall_ms=1792417838452 id=bg-395426e005864fa3ac03d73720cfd1dc instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838473 id=bg-3508590c9bf14b4cb38f0791ddbbdf91 instance=tomcat1 active=4 status=200 elapsed_ms=101.499234
+POC_TRACE event=BEGIN wall_ms=1792417838474 id=bg-4eb4eb91397640759df50c9878e803c3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838493 id=bg-9245294a0f1e46b1a92a00ac18545963 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838494 id=bg-be88d04ee3bd42e0a4b0b80f35c424d4 instance=tomcat1 active=5 status=200 elapsed_ms=101.107338
+POC_TRACE event=END wall_ms=1792417838513 id=bg-688fcd041bf144e294cd50dfa1119914 instance=tomcat1 active=4 status=200 elapsed_ms=101.220638
+POC_TRACE event=BEGIN wall_ms=1792417838517 id=bg-5325154f2c0d4ddab435a387fb08ca03 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838517 id=bg-9b3a84e933bd4a8e8e88b1fc3de4c532 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838535 id=bg-d7508eb567d642728e64641cb46009cb instance=tomcat1 active=5 status=200 elapsed_ms=101.951103
+POC_TRACE event=END wall_ms=1792417838554 id=bg-395426e005864fa3ac03d73720cfd1dc instance=tomcat1 active=4 status=200 elapsed_ms=101.703531
+POC_TRACE event=BEGIN wall_ms=1792417838557 id=bg-19c179516b1341459212a92ff761ff23 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838558 id=bg-7fbbf85f04ce4d239090a100487c488d instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838575 id=bg-4eb4eb91397640759df50c9878e803c3 instance=tomcat1 active=5 status=200 elapsed_ms=101.421122
+POC_TRACE event=END wall_ms=1792417838595 id=bg-9245294a0f1e46b1a92a00ac18545963 instance=tomcat1 active=4 status=200 elapsed_ms=101.204531
+POC_TRACE event=BEGIN wall_ms=1792417838598 id=bg-e1c58ffd35fb49638fb562a3f7164f10 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838598 id=bg-b57d434a4960432e87908f514240b28c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838618 id=bg-5325154f2c0d4ddab435a387fb08ca03 instance=tomcat1 active=5 status=200 elapsed_ms=100.895704
+POC_TRACE event=END wall_ms=1792417838618 id=bg-9b3a84e933bd4a8e8e88b1fc3de4c532 instance=tomcat1 active=4 status=200 elapsed_ms=101.38656
+POC_TRACE event=BEGIN wall_ms=1792417838641 id=bg-b9c2feaf72ae40778b24fecc0db16802 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838641 id=bg-4dee8f17b64a472d829bf7858b527612 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838658 id=bg-19c179516b1341459212a92ff761ff23 instance=tomcat1 active=5 status=200 elapsed_ms=101.132823
+POC_TRACE event=END wall_ms=1792417838659 id=bg-7fbbf85f04ce4d239090a100487c488d instance=tomcat1 active=4 status=200 elapsed_ms=100.954984
+POC_TRACE event=BEGIN wall_ms=1792417838682 id=bg-819a7f3ad60d4aa4bb4c2af77f6d1783 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838682 id=bg-1ab2eeb1cb584f08ad2f61f80a549ce6 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838699 id=bg-e1c58ffd35fb49638fb562a3f7164f10 instance=tomcat1 active=5 status=200 elapsed_ms=101.147851
+POC_TRACE event=END wall_ms=1792417838699 id=bg-b57d434a4960432e87908f514240b28c instance=tomcat1 active=4 status=200 elapsed_ms=101.258978
+POC_TRACE event=BEGIN wall_ms=1792417838724 id=bg-5ff7a141c83c4ac1ba07a62b30c57e0c instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838724 id=bg-12c1a87262184401a5bdb9f626b2aa40 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838742 id=bg-b9c2feaf72ae40778b24fecc0db16802 instance=tomcat1 active=4 status=200 elapsed_ms=101.513374
+POC_TRACE event=END wall_ms=1792417838742 id=bg-4dee8f17b64a472d829bf7858b527612 instance=tomcat1 active=5 status=200 elapsed_ms=101.430759
+POC_TRACE event=BEGIN wall_ms=1792417838764 id=bg-6a4121d472714084b8bc5e4ee9d4d851 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838764 id=bg-894567a0a99d49ba8ce976b259f7ebfc instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838783 id=bg-819a7f3ad60d4aa4bb4c2af77f6d1783 instance=tomcat1 active=5 status=200 elapsed_ms=100.926836
+POC_TRACE event=END wall_ms=1792417838784 id=bg-1ab2eeb1cb584f08ad2f61f80a549ce6 instance=tomcat1 active=4 status=200 elapsed_ms=101.34222
+POC_TRACE event=BEGIN wall_ms=1792417838804 id=bg-b86534fa79f945c39e01c7bbf4b822de instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838804 id=bg-117050fbb7064fad92929ece5bc39762 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838825 id=bg-12c1a87262184401a5bdb9f626b2aa40 instance=tomcat1 active=5 status=200 elapsed_ms=101.272268
+POC_TRACE event=END wall_ms=1792417838825 id=bg-5ff7a141c83c4ac1ba07a62b30c57e0c instance=tomcat1 active=4 status=200 elapsed_ms=101.30039
+POC_TRACE event=BEGIN wall_ms=1792417838828 id=bg-01bdc14efa124d5382611a064a96cfca instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838849 id=bg-5127f075b3874c73a0c3b06064f162cb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838864 id=bg-6a4121d472714084b8bc5e4ee9d4d851 instance=tomcat1 active=5 status=200 elapsed_ms=100.930091
+POC_TRACE event=END wall_ms=1792417838865 id=bg-894567a0a99d49ba8ce976b259f7ebfc instance=tomcat1 active=4 status=200 elapsed_ms=101.190805
+POC_TRACE event=BEGIN wall_ms=1792417838868 id=bg-e67baaf6cf534a458f96b0867c9422f3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417838889 id=bg-c3ec5053be5d4040861f6a5b0b5212b5 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417838905 id=bg-b86534fa79f945c39e01c7bbf4b822de instance=tomcat1 active=5 status=200 elapsed_ms=100.714241
+POC_TRACE event=END wall_ms=1792417838905 id=bg-117050fbb7064fad92929ece5bc39762 instance=tomcat1 active=4 status=200 elapsed_ms=100.651936
+POC_TRACE event=BEGIN wall_ms=1792417838908 id=bg-406bd13444954504b8a653e57218025b instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838930 id=bg-01bdc14efa124d5382611a064a96cfca instance=tomcat1 active=4 status=200 elapsed_ms=101.127847
+POC_TRACE event=BEGIN wall_ms=1792417838933 id=bg-e0e829142a4d4462b923aca2bf5499ce instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838951 id=bg-5127f075b3874c73a0c3b06064f162cb instance=tomcat1 active=4 status=200 elapsed_ms=101.497944
+POC_TRACE event=BEGIN wall_ms=1792417838953 id=bg-eac6ca2755cf49e7b76ec38b4edc351d instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838968 id=bg-e67baaf6cf534a458f96b0867c9422f3 instance=tomcat1 active=4 status=200 elapsed_ms=100.779291
+POC_TRACE event=BEGIN wall_ms=1792417838972 id=bg-a14ee309c5964d838c831573ac4ccbee instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417838990 id=bg-c3ec5053be5d4040861f6a5b0b5212b5 instance=tomcat1 active=4 status=200 elapsed_ms=101.397541
+POC_TRACE event=BEGIN wall_ms=1792417838993 id=bg-0d3f941fc6cb471cb871e24667cf1704 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839009 id=bg-406bd13444954504b8a653e57218025b instance=tomcat1 active=4 status=200 elapsed_ms=100.992739
+POC_TRACE event=BEGIN wall_ms=1792417839012 id=bg-1702a7e289c84b0da5a55c732ff42b3d instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839032 id=bg-8796c1e01c8542fba5f9e5f56f61e90b instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839033 id=bg-e0e829142a4d4462b923aca2bf5499ce instance=tomcat1 active=5 status=200 elapsed_ms=100.678374
+POC_TRACE event=END wall_ms=1792417839054 id=bg-eac6ca2755cf49e7b76ec38b4edc351d instance=tomcat1 active=4 status=200 elapsed_ms=100.70672
+POC_TRACE event=BEGIN wall_ms=1792417839057 id=bg-095e9f122e58497ca55461c109b4318a instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839073 id=bg-a14ee309c5964d838c831573ac4ccbee instance=tomcat1 active=4 status=200 elapsed_ms=100.802114
+POC_TRACE event=BEGIN wall_ms=1792417839076 id=bg-a37cee4a9b48441fae5bc6a0e6e3da9a instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839076 id=bg-602c188cfec2471d9dafd4db744f3e9d instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839094 id=bg-0d3f941fc6cb471cb871e24667cf1704 instance=tomcat1 active=5 status=200 elapsed_ms=101.398289
+POC_TRACE event=END wall_ms=1792417839113 id=bg-1702a7e289c84b0da5a55c732ff42b3d instance=tomcat1 active=4 status=200 elapsed_ms=101.286629
+POC_TRACE event=BEGIN wall_ms=1792417839117 id=bg-145f94aa05e64f77abe9146b8b71fbdd instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839118 id=bg-aeffda5d5e824f85823555f4cabf4798 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839134 id=bg-8796c1e01c8542fba5f9e5f56f61e90b instance=tomcat1 active=5 status=200 elapsed_ms=101.244157
+POC_TRACE event=BEGIN wall_ms=1792417839155 id=bg-67a6879ce2a2428da1db858256f5fc37 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839158 id=bg-095e9f122e58497ca55461c109b4318a instance=tomcat1 active=5 status=200 elapsed_ms=100.870483
+POC_TRACE event=END wall_ms=1792417839177 id=bg-a37cee4a9b48441fae5bc6a0e6e3da9a instance=tomcat1 active=4 status=200 elapsed_ms=100.673273
+POC_TRACE event=END wall_ms=1792417839178 id=bg-602c188cfec2471d9dafd4db744f3e9d instance=tomcat1 active=3 status=200 elapsed_ms=101.427359
+POC_TRACE event=BEGIN wall_ms=1792417839180 id=bg-71c58ea7afcb4535bb547e306445b828 instance=tomcat1 active=4
+POC_TRACE event=BEGIN wall_ms=1792417839201 id=bg-9b072b78ffd342ce987f2c2e5c73ba8f instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839202 id=bg-3ec5e8fe2f2f4a6185b35b9a04885b3d instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839219 id=bg-aeffda5d5e824f85823555f4cabf4798 instance=tomcat1 active=5 status=200 elapsed_ms=101.177053
+POC_TRACE event=END wall_ms=1792417839219 id=bg-145f94aa05e64f77abe9146b8b71fbdd instance=tomcat1 active=4 status=200 elapsed_ms=101.774753
+POC_TRACE event=BEGIN wall_ms=1792417839243 id=bg-fa414435ebd8411a98e2fd6b1f1c1d39 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839243 id=bg-d11402c6bedf4538abcfc4477c16a6f6 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839256 id=bg-67a6879ce2a2428da1db858256f5fc37 instance=tomcat1 active=5 status=200 elapsed_ms=100.99507
+POC_TRACE event=END wall_ms=1792417839281 id=bg-71c58ea7afcb4535bb547e306445b828 instance=tomcat1 active=4 status=200 elapsed_ms=101.074608
+POC_TRACE event=BEGIN wall_ms=1792417839285 id=bg-60987fbe189947a68551c8479a19cbd9 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839285 id=bg-c0e5ff6c11c94ce5b6d9ae1fe0263615 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839302 id=bg-9b072b78ffd342ce987f2c2e5c73ba8f instance=tomcat1 active=5 status=200 elapsed_ms=100.84752
+POC_TRACE event=END wall_ms=1792417839302 id=bg-3ec5e8fe2f2f4a6185b35b9a04885b3d instance=tomcat1 active=4 status=200 elapsed_ms=100.587893
+POC_TRACE event=BEGIN wall_ms=1792417839305 id=bg-b31f4e221fde45be89628e4767c0f3b5 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839328 id=bg-8314df5f9562456a8dbf576a064b7875 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839344 id=bg-d11402c6bedf4538abcfc4477c16a6f6 instance=tomcat1 active=5 status=200 elapsed_ms=100.926675
+POC_TRACE event=END wall_ms=1792417839344 id=bg-fa414435ebd8411a98e2fd6b1f1c1d39 instance=tomcat1 active=4 status=200 elapsed_ms=101.048343
+POC_TRACE event=BEGIN wall_ms=1792417839348 id=bg-a95e1dfd1a644755af4d89be91e10f4f instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839366 id=bg-79904afc28a34ea2b52c0851dbc909fe instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839385 id=bg-c0e5ff6c11c94ce5b6d9ae1fe0263615 instance=tomcat1 active=5 status=200 elapsed_ms=100.813243
+POC_TRACE event=END wall_ms=1792417839385 id=bg-60987fbe189947a68551c8479a19cbd9 instance=tomcat1 active=4 status=200 elapsed_ms=100.823624
+POC_TRACE event=BEGIN wall_ms=1792417839389 id=bg-5a451f89289445f89271f54ea9a88ef1 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839406 id=bg-b31f4e221fde45be89628e4767c0f3b5 instance=tomcat1 active=4 status=200 elapsed_ms=100.606673
+POC_TRACE event=BEGIN wall_ms=1792417839408 id=bg-9c8137f651e4422b8641e34785ac5bd2 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839429 id=bg-8314df5f9562456a8dbf576a064b7875 instance=tomcat1 active=4 status=200 elapsed_ms=101.121858
+POC_TRACE event=BEGIN wall_ms=1792417839433 id=bg-3a0f871c3b854f3ebf041569dd2e5008 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839449 id=bg-a95e1dfd1a644755af4d89be91e10f4f instance=tomcat1 active=4 status=200 elapsed_ms=101.189333
+POC_TRACE event=BEGIN wall_ms=1792417839452 id=bg-48c54d2827ee4e05ae70142403f9cc90 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839467 id=bg-79904afc28a34ea2b52c0851dbc909fe instance=tomcat1 active=4 status=200 elapsed_ms=100.75838
+POC_TRACE event=BEGIN wall_ms=1792417839470 id=bg-67f210987cbe47ae874ba148c0738877 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839491 id=bg-5a451f89289445f89271f54ea9a88ef1 instance=tomcat1 active=4 status=200 elapsed_ms=101.185923
+POC_TRACE event=BEGIN wall_ms=1792417839492 id=bg-db1af10610fb428f9a104d02692dc438 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839509 id=bg-9c8137f651e4422b8641e34785ac5bd2 instance=tomcat1 active=4 status=200 elapsed_ms=101.068024
+POC_TRACE event=BEGIN wall_ms=1792417839513 id=bg-771c9cd9e892408491b5f3f9360e6d0d instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839532 id=bg-7dd2f2e160674f569a8f847a4ae373f9 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839533 id=bg-3a0f871c3b854f3ebf041569dd2e5008 instance=tomcat1 active=5 status=200 elapsed_ms=100.698057
+POC_TRACE event=END wall_ms=1792417839552 id=bg-48c54d2827ee4e05ae70142403f9cc90 instance=tomcat1 active=4 status=200 elapsed_ms=100.74876
+POC_TRACE event=BEGIN wall_ms=1792417839556 id=bg-59c4a59fa1bb4822a386c21c74410b8c instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839557 id=bg-759f6fe475d44c2783d7e0c4025a2957 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839571 id=bg-67f210987cbe47ae874ba148c0738877 instance=tomcat1 active=5 status=200 elapsed_ms=100.645662
+POC_TRACE event=BEGIN wall_ms=1792417839593 id=bg-a2f483d0a50c4d5aa7ad1207e28ffff2 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839593 id=bg-db1af10610fb428f9a104d02692dc438 instance=tomcat1 active=5 status=200 elapsed_ms=100.961548
+POC_TRACE event=END wall_ms=1792417839614 id=bg-771c9cd9e892408491b5f3f9360e6d0d instance=tomcat1 active=4 status=200 elapsed_ms=101.122418
+POC_TRACE event=BEGIN wall_ms=1792417839616 id=bg-f38ff87187d745d487373aa6c0cb6099 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839618 id=bg-cf1f0e25b5b84a728d596bb998fa1a4c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839633 id=bg-7dd2f2e160674f569a8f847a4ae373f9 instance=tomcat1 active=5 status=200 elapsed_ms=101.230145
+POC_TRACE event=BEGIN wall_ms=1792417839656 id=bg-af80fe3485bc4f62a1487e64e85ee651 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839657 id=bg-759f6fe475d44c2783d7e0c4025a2957 instance=tomcat1 active=5 status=200 elapsed_ms=100.841173
+POC_TRACE event=END wall_ms=1792417839657 id=bg-59c4a59fa1bb4822a386c21c74410b8c instance=tomcat1 active=4 status=200 elapsed_ms=101.087335
+POC_TRACE event=BEGIN wall_ms=1792417839678 id=bg-f8d4466d51694fa3947b44dc83856762 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839678 id=bg-cb22b583da8a40a2a510af3995b30e7f instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839694 id=bg-a2f483d0a50c4d5aa7ad1207e28ffff2 instance=tomcat1 active=5 status=200 elapsed_ms=101.495213
+POC_TRACE event=END wall_ms=1792417839717 id=bg-f38ff87187d745d487373aa6c0cb6099 instance=tomcat1 active=4 status=200 elapsed_ms=100.690144
+POC_TRACE event=END wall_ms=1792417839718 id=bg-cf1f0e25b5b84a728d596bb998fa1a4c instance=tomcat1 active=3 status=200 elapsed_ms=100.625869
+POC_TRACE event=BEGIN wall_ms=1792417839720 id=bg-40217f5fb9054e4592fc6a9951cb3adf instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839720 id=bg-147b38fbc1f845d593e6e275f44749c1 instance=tomcat1 active=4
+POC_TRACE event=END wall_ms=1792417839757 id=bg-af80fe3485bc4f62a1487e64e85ee651 instance=tomcat1 active=4 status=200 elapsed_ms=101.114658
+POC_TRACE event=BEGIN wall_ms=1792417839760 id=bg-5530fee035734de5949b8b46c0d5a613 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839760 id=bg-3cde2d7edd9449d2a065bb7068163091 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839779 id=bg-cb22b583da8a40a2a510af3995b30e7f instance=tomcat1 active=5 status=200 elapsed_ms=100.567745
+POC_TRACE event=END wall_ms=1792417839779 id=bg-f8d4466d51694fa3947b44dc83856762 instance=tomcat1 active=4 status=200 elapsed_ms=101.324372
+POC_TRACE event=BEGIN wall_ms=1792417839802 id=bg-d6bc8098546943e7a17857394eb33206 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839802 id=bg-3de10eb33fab47a188fa336ee25bb8f3 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839821 id=bg-147b38fbc1f845d593e6e275f44749c1 instance=tomcat1 active=5 status=200 elapsed_ms=100.892539
+POC_TRACE event=END wall_ms=1792417839822 id=bg-40217f5fb9054e4592fc6a9951cb3adf instance=tomcat1 active=4 status=200 elapsed_ms=101.422688
+POC_TRACE event=BEGIN wall_ms=1792417839844 id=bg-339b6d0790744a57bd6835069d35a236 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839844 id=bg-80a993f6f4284c15897c9b7a0e939712 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839861 id=bg-5530fee035734de5949b8b46c0d5a613 instance=tomcat1 active=5 status=200 elapsed_ms=101.223395
+POC_TRACE event=END wall_ms=1792417839861 id=bg-3cde2d7edd9449d2a065bb7068163091 instance=tomcat1 active=4 status=200 elapsed_ms=101.077226
+POC_TRACE event=BEGIN wall_ms=1792417839883 id=bg-7b60debcc8e349bea7f2c9b7f3848d48 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417839883 id=bg-b3bbd2c7247449ef92d130b7f5cf163b instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417839903 id=bg-3de10eb33fab47a188fa336ee25bb8f3 instance=tomcat1 active=5 status=200 elapsed_ms=100.785877
+POC_TRACE event=END wall_ms=1792417839903 id=bg-d6bc8098546943e7a17857394eb33206 instance=tomcat1 active=4 status=200 elapsed_ms=101.644214
+POC_TRACE event=BEGIN wall_ms=1792417839907 id=bg-834a24555a094a3080759411a427e716 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839927 id=bg-c2802dd339b14111969f7c91d27229a1 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839945 id=bg-80a993f6f4284c15897c9b7a0e939712 instance=tomcat1 active=5 status=200 elapsed_ms=100.564051
+POC_TRACE event=END wall_ms=1792417839945 id=bg-339b6d0790744a57bd6835069d35a236 instance=tomcat1 active=4 status=200 elapsed_ms=100.631716
+POC_TRACE event=BEGIN wall_ms=1792417839948 id=bg-f7fa03950cf240468c034df23e1a1ce5 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417839969 id=bg-fd8f1cea94544e30a42fd611d3b5b1b3 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417839984 id=bg-b3bbd2c7247449ef92d130b7f5cf163b instance=tomcat1 active=5 status=200 elapsed_ms=101.098036
+POC_TRACE event=END wall_ms=1792417839984 id=bg-7b60debcc8e349bea7f2c9b7f3848d48 instance=tomcat1 active=4 status=200 elapsed_ms=101.098126
+POC_TRACE event=BEGIN wall_ms=1792417839988 id=bg-2af6364527fa4469a561bc84de4fe3d3 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840008 id=bg-834a24555a094a3080759411a427e716 instance=tomcat1 active=4 status=200 elapsed_ms=101.446781
+POC_TRACE event=BEGIN wall_ms=1792417840009 id=bg-3fce28a94a314a6c87d4f84d536b9a4e instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840029 id=bg-c2802dd339b14111969f7c91d27229a1 instance=tomcat1 active=4 status=200 elapsed_ms=101.274897
+POC_TRACE event=BEGIN wall_ms=1792417840032 id=bg-8f1b3aaaf6fa4abea4c21f0df0d45f10 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840049 id=bg-f7fa03950cf240468c034df23e1a1ce5 instance=tomcat1 active=4 status=200 elapsed_ms=101.243645
+POC_TRACE event=BEGIN wall_ms=1792417840052 id=bg-2cc9e02b31b64e479dd611425dc61a1c instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840070 id=bg-fd8f1cea94544e30a42fd611d3b5b1b3 instance=tomcat1 active=4 status=200 elapsed_ms=100.643442
+POC_TRACE event=BEGIN wall_ms=1792417840072 id=bg-e5bbdddb68c44463b48376f3b01478c4 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840089 id=bg-2af6364527fa4469a561bc84de4fe3d3 instance=tomcat1 active=4 status=200 elapsed_ms=100.620146
+POC_TRACE event=BEGIN wall_ms=1792417840092 id=bg-13fcdff5591c4653a811340fc56160f8 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840110 id=bg-3fce28a94a314a6c87d4f84d536b9a4e instance=tomcat1 active=4 status=200 elapsed_ms=101.234536
+POC_TRACE event=BEGIN wall_ms=1792417840113 id=bg-5731b13d259e48d297b092cbcd2f9588 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840133 id=bg-8f1b3aaaf6fa4abea4c21f0df0d45f10 instance=tomcat1 active=4 status=200 elapsed_ms=100.651787
+POC_TRACE event=BEGIN wall_ms=1792417840134 id=bg-c775028f264c485c94c7f296d1d5a1cf instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840153 id=bg-2cc9e02b31b64e479dd611425dc61a1c instance=tomcat1 active=4 status=200 elapsed_ms=101.176512
+POC_TRACE event=BEGIN wall_ms=1792417840157 id=bg-89819da514af4837aae3b92657b83034 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840157 id=bg-6c7ed66ecfee4707804ff5090d19d094 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840174 id=bg-e5bbdddb68c44463b48376f3b01478c4 instance=tomcat1 active=5 status=200 elapsed_ms=101.282178
+POC_TRACE event=END wall_ms=1792417840193 id=bg-13fcdff5591c4653a811340fc56160f8 instance=tomcat1 active=4 status=200 elapsed_ms=100.972068
+POC_TRACE event=BEGIN wall_ms=1792417840196 id=bg-02b5a953a6124a7b89fe556ecc1a543e instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417840196 id=bg-6af172ebb1974b6caebd6e29a99e962a instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840214 id=bg-5731b13d259e48d297b092cbcd2f9588 instance=tomcat1 active=5 status=200 elapsed_ms=101.16572
+POC_TRACE event=END wall_ms=1792417840234 id=bg-c775028f264c485c94c7f296d1d5a1cf instance=tomcat1 active=4 status=200 elapsed_ms=100.529439
+POC_TRACE event=BEGIN wall_ms=1792417840237 id=bg-a144e4cc3a0a459c97e46b5db2679861 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840238 id=bg-c16aaacca4984673946593faaece6033 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840257 id=bg-6c7ed66ecfee4707804ff5090d19d094 instance=tomcat1 active=5 status=200 elapsed_ms=100.522625
+POC_TRACE event=END wall_ms=1792417840258 id=bg-89819da514af4837aae3b92657b83034 instance=tomcat1 active=4 status=200 elapsed_ms=101.290543
+POC_TRACE event=BEGIN wall_ms=1792417840281 id=bg-3e5c87b39d2d4d7ebef2697996b8d425 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840281 id=bg-e6e3eb0ec826446a903542e3a1e33df7 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840297 id=bg-02b5a953a6124a7b89fe556ecc1a543e instance=tomcat1 active=5 status=200 elapsed_ms=101.036673
+POC_TRACE event=END wall_ms=1792417840297 id=bg-6af172ebb1974b6caebd6e29a99e962a instance=tomcat1 active=4 status=200 elapsed_ms=101.036723
+POC_TRACE event=BEGIN wall_ms=1792417840321 id=bg-b4b27627c7104d48b44401bc2d8d784d instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840322 id=bg-0c2e984878774508a0ec30a51cec0a54 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840338 id=bg-c16aaacca4984673946593faaece6033 instance=tomcat1 active=5 status=200 elapsed_ms=100.75022
+POC_TRACE event=END wall_ms=1792417840339 id=bg-a144e4cc3a0a459c97e46b5db2679861 instance=tomcat1 active=4 status=200 elapsed_ms=101.240626
+POC_TRACE event=BEGIN wall_ms=1792417840363 id=bg-767c70127bc9420d9cb470da7fae5b24 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840363 id=bg-e739729ed3fd41aab867c90fa73adf0b instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840382 id=bg-e6e3eb0ec826446a903542e3a1e33df7 instance=tomcat1 active=5 status=200 elapsed_ms=100.84971
+POC_TRACE event=END wall_ms=1792417840382 id=bg-3e5c87b39d2d4d7ebef2697996b8d425 instance=tomcat1 active=4 status=200 elapsed_ms=101.125189
+POC_TRACE event=BEGIN wall_ms=1792417840403 id=bg-e1af0595b03847f18f7e1ec078accdab instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840403 id=bg-0f96c76aefc0444db96c008e4aeb801a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840423 id=bg-0c2e984878774508a0ec30a51cec0a54 instance=tomcat1 active=5 status=200 elapsed_ms=101.052388
+POC_TRACE event=END wall_ms=1792417840423 id=bg-b4b27627c7104d48b44401bc2d8d784d instance=tomcat1 active=4 status=200 elapsed_ms=101.533896
+POC_TRACE event=BEGIN wall_ms=1792417840426 id=bg-0a63a7acf7de4a9a98423c4f4ed740fb instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840446 id=bg-e9d774428fbb45c0b3f58b67eb8356f0 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840464 id=bg-e739729ed3fd41aab867c90fa73adf0b instance=tomcat1 active=4 status=200 elapsed_ms=101.010321
+POC_TRACE event=END wall_ms=1792417840464 id=bg-767c70127bc9420d9cb470da7fae5b24 instance=tomcat1 active=5 status=200 elapsed_ms=101.176772
+POC_TRACE event=BEGIN wall_ms=1792417840468 id=bg-2a95870fb6c14488a5a2e79d4bdee387 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840488 id=bg-710a3675082e494aaad6d56662a345c4 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840504 id=bg-e1af0595b03847f18f7e1ec078accdab instance=tomcat1 active=5 status=200 elapsed_ms=101.250993
+POC_TRACE event=END wall_ms=1792417840505 id=bg-0f96c76aefc0444db96c008e4aeb801a instance=tomcat1 active=4 status=200 elapsed_ms=101.255411
+POC_TRACE event=BEGIN wall_ms=1792417840508 id=bg-e175f5f904f24e379246e005ac95e4b2 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840527 id=bg-0a63a7acf7de4a9a98423c4f4ed740fb instance=tomcat1 active=4 status=200 elapsed_ms=100.936243
+POC_TRACE event=BEGIN wall_ms=1792417840531 id=bg-027f67c5c49d4e6897036e651961ab4e instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840548 id=bg-e9d774428fbb45c0b3f58b67eb8356f0 instance=tomcat1 active=4 status=200 elapsed_ms=101.503584
+POC_TRACE event=BEGIN wall_ms=1792417840551 id=bg-fb40d12a4e994a078d44d1aa7ac75077 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840569 id=bg-2a95870fb6c14488a5a2e79d4bdee387 instance=tomcat1 active=4 status=200 elapsed_ms=101.23979
+POC_TRACE event=BEGIN wall_ms=1792417840572 id=bg-3c36e2c2cdf543e297d1bcdec9fbc52b instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840589 id=bg-710a3675082e494aaad6d56662a345c4 instance=tomcat1 active=4 status=200 elapsed_ms=101.092602
+POC_TRACE event=BEGIN wall_ms=1792417840593 id=bg-58fbe49fbdce4f9fa8ad1606eda218b2 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840609 id=bg-e175f5f904f24e379246e005ac95e4b2 instance=tomcat1 active=4 status=200 elapsed_ms=101.049392
+POC_TRACE event=BEGIN wall_ms=1792417840612 id=bg-fad435ee824f42e6aa5aa11fd7de86df instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840632 id=bg-027f67c5c49d4e6897036e651961ab4e instance=tomcat1 active=4 status=200 elapsed_ms=101.105456
+POC_TRACE event=BEGIN wall_ms=1792417840633 id=bg-b83707e5960542e98dcd96fd8d726081 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840635 id=bg-318023c1fdc741ad92a18d7c9922096c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840652 id=bg-fb40d12a4e994a078d44d1aa7ac75077 instance=tomcat1 active=5 status=200 elapsed_ms=100.656398
+POC_TRACE event=END wall_ms=1792417840672 id=bg-3c36e2c2cdf543e297d1bcdec9fbc52b instance=tomcat1 active=4 status=200 elapsed_ms=100.590357
+POC_TRACE event=BEGIN wall_ms=1792417840674 id=bg-bdfd983be362444e92bd62ab95478fa2 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840694 id=bg-58fbe49fbdce4f9fa8ad1606eda218b2 instance=tomcat1 active=4 status=200 elapsed_ms=101.182232
+POC_TRACE event=BEGIN wall_ms=1792417840696 id=bg-bae4e65211714196a34f33a7a377dcd3 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417840713 id=bg-fad435ee824f42e6aa5aa11fd7de86df instance=tomcat1 active=4 status=200 elapsed_ms=101.153891
+POC_TRACE event=BEGIN wall_ms=1792417840716 id=bg-78d69daba87e40ea9c1db1e9b11f04c5 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840716 id=bg-6dfe0ea47dbd4739a3acc58db085b0fd instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840734 id=bg-b83707e5960542e98dcd96fd8d726081 instance=tomcat1 active=5 status=200 elapsed_ms=101.187383
+POC_TRACE event=END wall_ms=1792417840735 id=bg-318023c1fdc741ad92a18d7c9922096c instance=tomcat1 active=4 status=200 elapsed_ms=100.564981
+POC_TRACE event=BEGIN wall_ms=1792417840759 id=bg-9fb482a4a1eb4afd9aaeb79736220f46 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840759 id=bg-0c5eec5f2172460a99a49deec7befac9 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840775 id=bg-bdfd983be362444e92bd62ab95478fa2 instance=tomcat1 active=5 status=200 elapsed_ms=101.228238
+POC_TRACE event=END wall_ms=1792417840797 id=bg-bae4e65211714196a34f33a7a377dcd3 instance=tomcat1 active=4 status=200 elapsed_ms=100.969462
+POC_TRACE event=BEGIN wall_ms=1792417840801 id=bg-89881fcac89c47c9997e8ae3533aaeb3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840801 id=bg-8be88b16d06d47de8786d897077c8081 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840817 id=bg-78d69daba87e40ea9c1db1e9b11f04c5 instance=tomcat1 active=5 status=200 elapsed_ms=100.996131
+POC_TRACE event=END wall_ms=1792417840817 id=bg-6dfe0ea47dbd4739a3acc58db085b0fd instance=tomcat1 active=4 status=200 elapsed_ms=101.045505
+POC_TRACE event=BEGIN wall_ms=1792417840841 id=bg-768d781a5c7c4cd7aaa04ccf6f908bd2 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840841 id=bg-570fb8bd366d47a1bbcf2a49df2dc49c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840860 id=bg-0c5eec5f2172460a99a49deec7befac9 instance=tomcat1 active=5 status=200 elapsed_ms=101.101998
+POC_TRACE event=END wall_ms=1792417840860 id=bg-9fb482a4a1eb4afd9aaeb79736220f46 instance=tomcat1 active=4 status=200 elapsed_ms=101.153129
+POC_TRACE event=BEGIN wall_ms=1792417840882 id=bg-7f96bba3a8694941a2b7182e31159904 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840882 id=bg-69d40cf4019d4e928e54b9add9f40692 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840902 id=bg-89881fcac89c47c9997e8ae3533aaeb3 instance=tomcat1 active=5 status=200 elapsed_ms=101.147039
+POC_TRACE event=END wall_ms=1792417840902 id=bg-8be88b16d06d47de8786d897077c8081 instance=tomcat1 active=4 status=200 elapsed_ms=100.751446
+POC_TRACE event=BEGIN wall_ms=1792417840923 id=bg-0dee964bfed34f51b9cefb525c2d4aa3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840923 id=bg-bae73b60102c46fe87d435c5286a6fed instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840942 id=bg-768d781a5c7c4cd7aaa04ccf6f908bd2 instance=tomcat1 active=4 status=200 elapsed_ms=101.116297
+POC_TRACE event=END wall_ms=1792417840942 id=bg-570fb8bd366d47a1bbcf2a49df2dc49c instance=tomcat1 active=5 status=200 elapsed_ms=100.864973
+POC_TRACE event=BEGIN wall_ms=1792417840946 id=bg-2cad30b1556c4bc0ba2e3466bc3063da instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417840967 id=bg-ce8c1d82c7a74ecf95370b3601edbfd4 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417840983 id=bg-7f96bba3a8694941a2b7182e31159904 instance=tomcat1 active=5 status=200 elapsed_ms=101.048482
+POC_TRACE event=END wall_ms=1792417840983 id=bg-69d40cf4019d4e928e54b9add9f40692 instance=tomcat1 active=4 status=200 elapsed_ms=101.034642
+POC_TRACE event=BEGIN wall_ms=1792417840987 id=bg-21c8b3c9962a42e68e94a588595bd3fb instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841009 id=bg-fa7cadf7991840fcbbcf2a3505b9f80f instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841024 id=bg-bae73b60102c46fe87d435c5286a6fed instance=tomcat1 active=5 status=200 elapsed_ms=100.623723
+POC_TRACE event=END wall_ms=1792417841024 id=bg-0dee964bfed34f51b9cefb525c2d4aa3 instance=tomcat1 active=4 status=200 elapsed_ms=101.128727
+POC_TRACE event=BEGIN wall_ms=1792417841027 id=bg-ec772a625f7c4449b27ea5f2120e9d29 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841047 id=bg-2cad30b1556c4bc0ba2e3466bc3063da instance=tomcat1 active=4 status=200 elapsed_ms=100.939374
+POC_TRACE event=BEGIN wall_ms=1792417841047 id=bg-d3f5931d791c43178534a86abf15087d instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841068 id=bg-ce8c1d82c7a74ecf95370b3601edbfd4 instance=tomcat1 active=4 status=200 elapsed_ms=101.086374
+POC_TRACE event=BEGIN wall_ms=1792417841072 id=bg-4594ca7e209942eb89e2be8063b8cd16 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841088 id=bg-21c8b3c9962a42e68e94a588595bd3fb instance=tomcat1 active=4 status=200 elapsed_ms=101.006179
+POC_TRACE event=BEGIN wall_ms=1792417841091 id=bg-5358f1fbc9204e31af9a4b67b44b9710 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841110 id=bg-fa7cadf7991840fcbbcf2a3505b9f80f instance=tomcat1 active=4 status=200 elapsed_ms=101.052657
+POC_TRACE event=BEGIN wall_ms=1792417841113 id=bg-23ed2b29e535437ea01b304025f3c4fe instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841128 id=bg-ec772a625f7c4449b27ea5f2120e9d29 instance=tomcat1 active=4 status=200 elapsed_ms=101.00746
+POC_TRACE event=BEGIN wall_ms=1792417841131 id=bg-e975eb5f4b5a451387aef6f6e9bef36b instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841148 id=bg-d3f5931d791c43178534a86abf15087d instance=tomcat1 active=4 status=200 elapsed_ms=101.051723
+POC_TRACE event=BEGIN wall_ms=1792417841152 id=bg-f477d37b59fb488fae9ae930e67b4e13 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841173 id=bg-e4a3251f05ce4244be58ab673a2ef561 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841173 id=bg-4594ca7e209942eb89e2be8063b8cd16 instance=tomcat1 active=5 status=200 elapsed_ms=101.417537
+POC_TRACE event=END wall_ms=1792417841192 id=bg-5358f1fbc9204e31af9a4b67b44b9710 instance=tomcat1 active=4 status=200 elapsed_ms=101.096316
+POC_TRACE event=BEGIN wall_ms=1792417841195 id=bg-4e5760e2706e479c9c4895dbd9a92d30 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841195 id=bg-1ba17f74457242fbb5758d56e1519462 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841214 id=bg-23ed2b29e535437ea01b304025f3c4fe instance=tomcat1 active=5 status=200 elapsed_ms=100.766229
+POC_TRACE event=END wall_ms=1792417841232 id=bg-e975eb5f4b5a451387aef6f6e9bef36b instance=tomcat1 active=4 status=200 elapsed_ms=101.057282
+POC_TRACE event=BEGIN wall_ms=1792417841236 id=bg-834c3db54ee34d439df86a5896a087fc instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841253 id=bg-f477d37b59fb488fae9ae930e67b4e13 instance=tomcat1 active=4 status=200 elapsed_ms=101.138231
+POC_TRACE event=BEGIN wall_ms=1792417841253 id=bg-562217d014b34100ae787d0a306b3ebb instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841274 id=bg-e4a3251f05ce4244be58ab673a2ef561 instance=tomcat1 active=4 status=200 elapsed_ms=101.181985
+POC_TRACE event=BEGIN wall_ms=1792417841276 id=bg-2553a68d7a9e4edfadc6382ff42e4d78 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841277 id=bg-16a5421a03d241d2930a7e742e781ce0 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841296 id=bg-4e5760e2706e479c9c4895dbd9a92d30 instance=tomcat1 active=5 status=200 elapsed_ms=101.002058
+POC_TRACE event=END wall_ms=1792417841296 id=bg-1ba17f74457242fbb5758d56e1519462 instance=tomcat1 active=4 status=200 elapsed_ms=100.587723
+POC_TRACE event=BEGIN wall_ms=1792417841322 id=bg-0598f1b650e042d989bf859b6a340a98 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841323 id=bg-d41b93a66e7b4204808c10c9b69b497b instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841337 id=bg-834c3db54ee34d439df86a5896a087fc instance=tomcat1 active=5 status=200 elapsed_ms=101.131468
+POC_TRACE event=END wall_ms=1792417841354 id=bg-562217d014b34100ae787d0a306b3ebb instance=tomcat1 active=4 status=200 elapsed_ms=100.947965
+POC_TRACE event=BEGIN wall_ms=1792417841357 id=bg-a01e84498d144a8ab14ccae4ac1d95fd instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841357 id=bg-b5651a29306b4494a7166d92b34b6699 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841378 id=bg-2553a68d7a9e4edfadc6382ff42e4d78 instance=tomcat1 active=5 status=200 elapsed_ms=101.203091
+POC_TRACE event=END wall_ms=1792417841378 id=bg-16a5421a03d241d2930a7e742e781ce0 instance=tomcat1 active=4 status=200 elapsed_ms=100.85539
+POC_TRACE event=BEGIN wall_ms=1792417841403 id=bg-9cb9d43c41994bafaa6e104a8061f593 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841403 id=bg-8cc5e94106e845688e78a77bf49c66fc instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841423 id=bg-d41b93a66e7b4204808c10c9b69b497b instance=tomcat1 active=5 status=200 elapsed_ms=100.678664
+POC_TRACE event=END wall_ms=1792417841424 id=bg-0598f1b650e042d989bf859b6a340a98 instance=tomcat1 active=4 status=200 elapsed_ms=101.208712
+POC_TRACE event=BEGIN wall_ms=1792417841444 id=bg-03a7f69f13c74a89961d320b037eb96b instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841444 id=bg-8144191b79cd4f56bbcfc39781622b13 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841458 id=bg-b5651a29306b4494a7166d92b34b6699 instance=tomcat1 active=5 status=200 elapsed_ms=100.572659
+POC_TRACE event=END wall_ms=1792417841458 id=bg-a01e84498d144a8ab14ccae4ac1d95fd instance=tomcat1 active=4 status=200 elapsed_ms=100.976856
+POC_TRACE event=BEGIN wall_ms=1792417841461 id=bg-4793d12f56d04a13867425c0ca5a457a instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841485 id=bg-0417cb5f419e42aa9f6f293994823af8 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841504 id=bg-8cc5e94106e845688e78a77bf49c66fc instance=tomcat1 active=5 status=200 elapsed_ms=100.910082
+POC_TRACE event=END wall_ms=1792417841504 id=bg-9cb9d43c41994bafaa6e104a8061f593 instance=tomcat1 active=4 status=200 elapsed_ms=100.973216
+POC_TRACE event=BEGIN wall_ms=1792417841526 id=bg-119d56464741412497c6c4174ef1df77 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417841526 id=bg-85964c1469ff4ecd929dad834aeb7469 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841545 id=bg-03a7f69f13c74a89961d320b037eb96b instance=tomcat1 active=5 status=200 elapsed_ms=100.560206
+POC_TRACE event=END wall_ms=1792417841545 id=bg-8144191b79cd4f56bbcfc39781622b13 instance=tomcat1 active=4 status=200 elapsed_ms=100.976977
+POC_TRACE event=BEGIN wall_ms=1792417841548 id=bg-15154cc72a9248c49a9e05f20612e44c instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841562 id=bg-4793d12f56d04a13867425c0ca5a457a instance=tomcat1 active=4 status=200 elapsed_ms=100.587371
+POC_TRACE event=BEGIN wall_ms=1792417841564 id=bg-bd73af34a94d45adacbc4c45f55810f0 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841585 id=bg-0417cb5f419e42aa9f6f293994823af8 instance=tomcat1 active=4 status=200 elapsed_ms=100.97763
+POC_TRACE event=BEGIN wall_ms=1792417841588 id=bg-830621a350b84b74b56a4238de998ede instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841607 id=bg-0206d51d35fa4f1b9e6378bd1859344e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841627 id=bg-85964c1469ff4ecd929dad834aeb7469 instance=tomcat1 active=4 status=200 elapsed_ms=101.0071
+POC_TRACE event=END wall_ms=1792417841627 id=bg-119d56464741412497c6c4174ef1df77 instance=tomcat1 active=5 status=200 elapsed_ms=101.000292
+POC_TRACE event=BEGIN wall_ms=1792417841631 id=bg-a00dd3ed9b8a49889cc0e2f678bbde50 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841648 id=bg-15154cc72a9248c49a9e05f20612e44c instance=tomcat1 active=4 status=200 elapsed_ms=100.667852
+POC_TRACE event=BEGIN wall_ms=1792417841652 id=bg-27a1285223234a54a2a50cc6166effe6 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841665 id=bg-bd73af34a94d45adacbc4c45f55810f0 instance=tomcat1 active=4 status=200 elapsed_ms=100.676554
+POC_TRACE event=BEGIN wall_ms=1792417841669 id=bg-40441b79093f40538df213d8619f1bbf instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841688 id=bg-8510fde1b8e647cd8303ac8d3c53019d instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841689 id=bg-830621a350b84b74b56a4238de998ede instance=tomcat1 active=5 status=200 elapsed_ms=100.696115
+POC_TRACE event=END wall_ms=1792417841708 id=bg-0206d51d35fa4f1b9e6378bd1859344e instance=tomcat1 active=4 status=200 elapsed_ms=100.965519
+POC_TRACE event=BEGIN wall_ms=1792417841712 id=bg-17257ada269a4b1c89baf1c7a3a7df5a instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841732 id=bg-a00dd3ed9b8a49889cc0e2f678bbde50 instance=tomcat1 active=4 status=200 elapsed_ms=101.105986
+POC_TRACE event=BEGIN wall_ms=1792417841733 id=bg-c40f55504fdd4b42a5e00427b114d563 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841754 id=bg-27a1285223234a54a2a50cc6166effe6 instance=tomcat1 active=4 status=200 elapsed_ms=101.433347
+POC_TRACE event=BEGIN wall_ms=1792417841755 id=bg-6952d1233b1a4c90b4d23f0ae47b1fd2 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841770 id=bg-40441b79093f40538df213d8619f1bbf instance=tomcat1 active=4 status=200 elapsed_ms=101.363603
+POC_TRACE event=BEGIN wall_ms=1792417841772 id=bg-f41a610dd2f84ea3bc9433518dbfc610 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841790 id=bg-8510fde1b8e647cd8303ac8d3c53019d instance=tomcat1 active=4 status=200 elapsed_ms=101.720656
+POC_TRACE event=BEGIN wall_ms=1792417841793 id=bg-fb16b22cfaf44f27853688393aa258bb instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841813 id=bg-17257ada269a4b1c89baf1c7a3a7df5a instance=tomcat1 active=4 status=200 elapsed_ms=101.396919
+POC_TRACE event=BEGIN wall_ms=1792417841813 id=bg-4d66d8cc9f994717a5e4bdc1c6cc9157 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417841834 id=bg-c40f55504fdd4b42a5e00427b114d563 instance=tomcat1 active=4 status=200 elapsed_ms=101.054233
+POC_TRACE event=BEGIN wall_ms=1792417841835 id=bg-173236668ea7404bbdcd4e156c75eea1 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841837 id=bg-7c6c3128fed143f382839074a421ba71 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841856 id=bg-6952d1233b1a4c90b4d23f0ae47b1fd2 instance=tomcat1 active=5 status=200 elapsed_ms=101.206483
+POC_TRACE event=END wall_ms=1792417841873 id=bg-f41a610dd2f84ea3bc9433518dbfc610 instance=tomcat1 active=4 status=200 elapsed_ms=101.17424
+POC_TRACE event=BEGIN wall_ms=1792417841877 id=bg-7e6aa7ed01644ee680b4cb2f4d067588 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841877 id=bg-5a3ca39eb0a444219844911a75a3bde0 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841895 id=bg-fb16b22cfaf44f27853688393aa258bb instance=tomcat1 active=5 status=200 elapsed_ms=101.434347
+POC_TRACE event=END wall_ms=1792417841914 id=bg-4d66d8cc9f994717a5e4bdc1c6cc9157 instance=tomcat1 active=4 status=200 elapsed_ms=101.010909
+POC_TRACE event=BEGIN wall_ms=1792417841917 id=bg-1330eec15d5a4f878afad962f2feb2dc instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841917 id=bg-769f01960cac426e9431f8e1104a5686 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841935 id=bg-173236668ea7404bbdcd4e156c75eea1 instance=tomcat1 active=5 status=200 elapsed_ms=100.664357
+POC_TRACE event=END wall_ms=1792417841937 id=bg-7c6c3128fed143f382839074a421ba71 instance=tomcat1 active=4 status=200 elapsed_ms=100.57861
+POC_TRACE event=BEGIN wall_ms=1792417841963 id=bg-338d27c71cad4a1096d9f83064f369a1 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417841963 id=bg-d69fc8e425534529925389a926c7660a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417841978 id=bg-5a3ca39eb0a444219844911a75a3bde0 instance=tomcat1 active=5 status=200 elapsed_ms=100.811047
+POC_TRACE event=END wall_ms=1792417841978 id=bg-7e6aa7ed01644ee680b4cb2f4d067588 instance=tomcat1 active=4 status=200 elapsed_ms=101.086615
+POC_TRACE event=BEGIN wall_ms=1792417842001 id=bg-40fa99b9f74b4700a0e22685909750ad instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842002 id=bg-232ef8efe6e0496eb90d038bdeba6696 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842018 id=bg-769f01960cac426e9431f8e1104a5686 instance=tomcat1 active=5 status=200 elapsed_ms=100.520603
+POC_TRACE event=END wall_ms=1792417842018 id=bg-1330eec15d5a4f878afad962f2feb2dc instance=tomcat1 active=4 status=200 elapsed_ms=101.274768
+POC_TRACE event=BEGIN wall_ms=1792417842043 id=bg-76db687395194d208a126ba3f67863f0 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842043 id=bg-223fa935c46b4590a5faa18bca6eaa30 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842064 id=bg-338d27c71cad4a1096d9f83064f369a1 instance=tomcat1 active=4 status=200 elapsed_ms=100.974916
+POC_TRACE event=END wall_ms=1792417842064 id=bg-d69fc8e425534529925389a926c7660a instance=tomcat1 active=5 status=200 elapsed_ms=100.920114
+POC_TRACE event=BEGIN wall_ms=1792417842085 id=bg-143136f963374b60a8e2dbcadcde5ed8 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842086 id=bg-defb5b4435014075be2d6bc0bfcc696a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842102 id=bg-40fa99b9f74b4700a0e22685909750ad instance=tomcat1 active=5 status=200 elapsed_ms=100.619028
+POC_TRACE event=END wall_ms=1792417842102 id=bg-232ef8efe6e0496eb90d038bdeba6696 instance=tomcat1 active=4 status=200 elapsed_ms=100.446396
+POC_TRACE event=BEGIN wall_ms=1792417842125 id=bg-81b8e3ffba004a31b1506619f8bd8a63 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842125 id=bg-65bb25df489a44a99de3931f0e743859 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842143 id=bg-76db687395194d208a126ba3f67863f0 instance=tomcat1 active=5 status=200 elapsed_ms=100.544624
+POC_TRACE event=END wall_ms=1792417842144 id=bg-223fa935c46b4590a5faa18bca6eaa30 instance=tomcat1 active=4 status=200 elapsed_ms=100.843839
+POC_TRACE event=BEGIN wall_ms=1792417842164 id=bg-be7d84523e1c44d0826035f43d68fb56 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842165 id=bg-689635602b1f4c8780a90e0bcf8f09df instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842186 id=bg-143136f963374b60a8e2dbcadcde5ed8 instance=tomcat1 active=5 status=200 elapsed_ms=100.576646
+POC_TRACE event=BEGIN wall_ms=1792417842187 id=bg-4a564988f9d4469398be769044ee4617 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842187 id=bg-defb5b4435014075be2d6bc0bfcc696a instance=tomcat1 active=5 status=200 elapsed_ms=101.169664
+POC_TRACE event=BEGIN wall_ms=1792417842216 id=bg-211d7c37a4494ac0b95f77a328f50d1a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842226 id=bg-65bb25df489a44a99de3931f0e743859 instance=tomcat1 active=4 status=200 elapsed_ms=100.793254
+POC_TRACE event=END wall_ms=1792417842226 id=bg-81b8e3ffba004a31b1506619f8bd8a63 instance=tomcat1 active=5 status=200 elapsed_ms=100.949299
+POC_TRACE event=BEGIN wall_ms=1792417842229 id=bg-d5e0da2abf33451bbe23d46481adf2ca instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842248 id=bg-e543035efabe402a86ff1ea91d17858f instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842265 id=bg-689635602b1f4c8780a90e0bcf8f09df instance=tomcat1 active=5 status=200 elapsed_ms=100.606784
+POC_TRACE event=END wall_ms=1792417842265 id=bg-be7d84523e1c44d0826035f43d68fb56 instance=tomcat1 active=4 status=200 elapsed_ms=100.97809
+POC_TRACE event=BEGIN wall_ms=1792417842269 id=bg-138e59faee7644b98c95b248c057d097 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842288 id=bg-4a564988f9d4469398be769044ee4617 instance=tomcat1 active=4 status=200 elapsed_ms=101.129341
+POC_TRACE event=BEGIN wall_ms=1792417842289 id=bg-d94e685ade4f493abe6bdb9c3e3244c3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842314 id=bg-955fb1a64021493a8af5d7c4064a4bf9 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842317 id=bg-211d7c37a4494ac0b95f77a328f50d1a instance=tomcat1 active=5 status=200 elapsed_ms=100.975506
+POC_TRACE event=END wall_ms=1792417842330 id=bg-d5e0da2abf33451bbe23d46481adf2ca instance=tomcat1 active=4 status=200 elapsed_ms=100.974257
+POC_TRACE event=BEGIN wall_ms=1792417842332 id=bg-cb325438e9b0450caaa7bf30d4b4b42f instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842349 id=bg-e543035efabe402a86ff1ea91d17858f instance=tomcat1 active=4 status=200 elapsed_ms=100.968546
+POC_TRACE event=BEGIN wall_ms=1792417842352 id=bg-85690b9a096d4a7b84069bd40e85ac54 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842370 id=bg-138e59faee7644b98c95b248c057d097 instance=tomcat1 active=4 status=200 elapsed_ms=101.170724
+POC_TRACE event=BEGIN wall_ms=1792417842371 id=bg-2f8dcb845df849d0acebabd55335dc8e instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842390 id=bg-d94e685ade4f493abe6bdb9c3e3244c3 instance=tomcat1 active=4 status=200 elapsed_ms=101.047923
+POC_TRACE event=BEGIN wall_ms=1792417842394 id=bg-fc831ddd20f54644ba08571ba3791de3 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842413 id=bg-d8d3f5ac56104a05828fd6cdb49650eb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842414 id=bg-955fb1a64021493a8af5d7c4064a4bf9 instance=tomcat1 active=5 status=200 elapsed_ms=100.635799
+POC_TRACE event=END wall_ms=1792417842433 id=bg-cb325438e9b0450caaa7bf30d4b4b42f instance=tomcat1 active=4 status=200 elapsed_ms=100.635344
+POC_TRACE event=BEGIN wall_ms=1792417842436 id=bg-8a9c4b3b53564fb18dc49f354f84882a instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842436 id=bg-4fdeffd69f6a4906a385913a2a221cf8 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842453 id=bg-85690b9a096d4a7b84069bd40e85ac54 instance=tomcat1 active=5 status=200 elapsed_ms=101.015585
+POC_TRACE event=END wall_ms=1792417842473 id=bg-2f8dcb845df849d0acebabd55335dc8e instance=tomcat1 active=4 status=200 elapsed_ms=101.16145
+POC_TRACE event=BEGIN wall_ms=1792417842474 id=bg-200c60bf1e85409b92c2175970dd6c5b instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842494 id=bg-e61d43a8fa8944dc998f39f619e7f8b3 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842495 id=bg-fc831ddd20f54644ba08571ba3791de3 instance=tomcat1 active=5 status=200 elapsed_ms=101.112925
+POC_TRACE event=END wall_ms=1792417842514 id=bg-d8d3f5ac56104a05828fd6cdb49650eb instance=tomcat1 active=4 status=200 elapsed_ms=101.005579
+POC_TRACE event=BEGIN wall_ms=1792417842515 id=bg-806911c2927445b4b06c16d423bf602c instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842537 id=bg-54aadf075bd9464f8d488f8981e4fcfd instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842537 id=bg-4fdeffd69f6a4906a385913a2a221cf8 instance=tomcat1 active=5 status=200 elapsed_ms=100.690709
+POC_TRACE event=END wall_ms=1792417842537 id=bg-8a9c4b3b53564fb18dc49f354f84882a instance=tomcat1 active=4 status=200 elapsed_ms=100.974591
+POC_TRACE event=BEGIN wall_ms=1792417842540 id=bg-fac5298c509f4c7fa5238895f70b8c2a instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842559 id=bg-a3f8b704884c4335aa534029958ede14 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842575 id=bg-200c60bf1e85409b92c2175970dd6c5b instance=tomcat1 active=5 status=200 elapsed_ms=101.257396
+POC_TRACE event=END wall_ms=1792417842594 id=bg-e61d43a8fa8944dc998f39f619e7f8b3 instance=tomcat1 active=4 status=200 elapsed_ms=100.595548
+POC_TRACE event=BEGIN wall_ms=1792417842597 id=bg-42bcb48593d148379a60781fcf5b6e19 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842597 id=bg-2bd57c3416314c97aaa717ac610bbefa instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842616 id=bg-806911c2927445b4b06c16d423bf602c instance=tomcat1 active=5 status=200 elapsed_ms=100.978537
+POC_TRACE event=END wall_ms=1792417842638 id=bg-54aadf075bd9464f8d488f8981e4fcfd instance=tomcat1 active=4 status=200 elapsed_ms=100.984227
+POC_TRACE event=BEGIN wall_ms=1792417842640 id=bg-393ff68ab99d455eb988345ffdbff4f1 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842641 id=bg-fac5298c509f4c7fa5238895f70b8c2a instance=tomcat1 active=4 status=200 elapsed_ms=100.872323
+POC_TRACE event=BEGIN wall_ms=1792417842641 id=bg-fbdaa03d841f47b4b4980c604e1c572b instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842660 id=bg-a3f8b704884c4335aa534029958ede14 instance=tomcat1 active=4 status=200 elapsed_ms=101.15925
+POC_TRACE event=BEGIN wall_ms=1792417842681 id=bg-23441bfdae6a45419354b3e3afee4e66 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842681 id=bg-a3c4700c20824a48873ba92f701ff5cb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842698 id=bg-2bd57c3416314c97aaa717ac610bbefa instance=tomcat1 active=5 status=200 elapsed_ms=100.844318
+POC_TRACE event=END wall_ms=1792417842698 id=bg-42bcb48593d148379a60781fcf5b6e19 instance=tomcat1 active=4 status=200 elapsed_ms=100.969437
+POC_TRACE event=BEGIN wall_ms=1792417842723 id=bg-9ddb1d9825ba4be193a9019b9d2da629 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842723 id=bg-e7c44323750945338011bfabe5f7cb95 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842741 id=bg-393ff68ab99d455eb988345ffdbff4f1 instance=tomcat1 active=5 status=200 elapsed_ms=100.541848
+POC_TRACE event=END wall_ms=1792417842742 id=bg-fbdaa03d841f47b4b4980c604e1c572b instance=tomcat1 active=4 status=200 elapsed_ms=100.743679
+POC_TRACE event=BEGIN wall_ms=1792417842763 id=bg-41b4ec3e200048cf8f5acca69275f25e instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842763 id=bg-25226c9cffd24881ae9645a4dd0a3cf5 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842782 id=bg-a3c4700c20824a48873ba92f701ff5cb instance=tomcat1 active=5 status=200 elapsed_ms=100.453987
+POC_TRACE event=END wall_ms=1792417842782 id=bg-23441bfdae6a45419354b3e3afee4e66 instance=tomcat1 active=4 status=200 elapsed_ms=101.091726
+POC_TRACE event=BEGIN wall_ms=1792417842803 id=bg-ebef6a3702104b3a86b619667e34dfee instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417842803 id=bg-75d3454b83654b22a76502694dd66465 instance=tomcat1 active=5
+POC_TRACE event=END wall_ms=1792417842823 id=bg-e7c44323750945338011bfabe5f7cb95 instance=tomcat1 active=5 status=200 elapsed_ms=100.512902
+POC_TRACE event=END wall_ms=1792417842824 id=bg-9ddb1d9825ba4be193a9019b9d2da629 instance=tomcat1 active=4 status=200 elapsed_ms=101.074608
+POC_TRACE event=BEGIN wall_ms=1792417842826 id=bg-e4cd990ecb054c1bb0a16f761f5b105a instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842848 id=bg-655e682f4cef4ab898d58a5eedc58aa8 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842864 id=bg-41b4ec3e200048cf8f5acca69275f25e instance=tomcat1 active=4 status=200 elapsed_ms=100.958696
+POC_TRACE event=END wall_ms=1792417842864 id=bg-25226c9cffd24881ae9645a4dd0a3cf5 instance=tomcat1 active=5 status=200 elapsed_ms=100.924094
+POC_TRACE event=BEGIN wall_ms=1792417842867 id=bg-fcc428eca5dd46a89829b32073acd152 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842868 id=bg-f83415563ebf4b8b873a6002ae706340 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842904 id=bg-ebef6a3702104b3a86b619667e34dfee instance=tomcat1 active=5 status=200 elapsed_ms=100.588441
+POC_TRACE event=END wall_ms=1792417842905 id=bg-75d3454b83654b22a76502694dd66465 instance=tomcat1 active=4 status=200 elapsed_ms=101.396655
+POC_TRACE event=BEGIN wall_ms=1792417842907 id=bg-c909b02f30d8416fb63f6d724fdc21e4 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842920 id=bg-d5722ca4e6074f3d91e37fa8010c5e2b instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842927 id=bg-e4cd990ecb054c1bb0a16f761f5b105a instance=tomcat1 active=5 status=200 elapsed_ms=100.530812
+POC_TRACE event=BEGIN wall_ms=1792417842949 id=bg-bc2b63a129f94477a5ad35df0b0062fa instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842949 id=bg-655e682f4cef4ab898d58a5eedc58aa8 instance=tomcat1 active=5 status=200 elapsed_ms=100.863659
+POC_TRACE event=BEGIN wall_ms=1792417842950 id=bg-6f2196f5d7c546449d4caaaef5e92731 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417842968 id=bg-f83415563ebf4b8b873a6002ae706340 instance=tomcat1 active=5 status=200 elapsed_ms=100.514585
+POC_TRACE event=END wall_ms=1792417842969 id=bg-fcc428eca5dd46a89829b32073acd152 instance=tomcat1 active=4 status=200 elapsed_ms=101.16442
+POC_TRACE event=BEGIN wall_ms=1792417842991 id=bg-e8d96d52c7504bbca43bc01b0b2e47fd instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417842992 id=bg-c19eb3531d0043d2a36e6602644ed775 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843008 id=bg-c909b02f30d8416fb63f6d724fdc21e4 instance=tomcat1 active=5 status=200 elapsed_ms=101.025762
+POC_TRACE event=BEGIN wall_ms=1792417843012 id=bg-a13078be25ab46d892e75ea86919fddb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843021 id=bg-d5722ca4e6074f3d91e37fa8010c5e2b instance=tomcat1 active=5 status=200 elapsed_ms=101.206121
+POC_TRACE event=BEGIN wall_ms=1792417843028 id=bg-1f96e11b1c774d5286423af81c0f8d9c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843050 id=bg-bc2b63a129f94477a5ad35df0b0062fa instance=tomcat1 active=5 status=200 elapsed_ms=101.195693
+POC_TRACE event=END wall_ms=1792417843051 id=bg-6f2196f5d7c546449d4caaaef5e92731 instance=tomcat1 active=4 status=200 elapsed_ms=100.726174
+POC_TRACE event=BEGIN wall_ms=1792417843058 id=bg-8169b21289d8474ba2387b0bde63f7ae instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417843074 id=bg-75b7862c347e467d9cdb1c9405bed7a8 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843092 id=bg-e8d96d52c7504bbca43bc01b0b2e47fd instance=tomcat1 active=5 status=200 elapsed_ms=101.251722
+POC_TRACE event=END wall_ms=1792417843092 id=bg-c19eb3531d0043d2a36e6602644ed775 instance=tomcat1 active=4 status=200 elapsed_ms=100.762696
+POC_TRACE event=BEGIN wall_ms=1792417843095 id=bg-3fa7837a26324d6581fec94b1cac9ee2 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417843105 id=bg-471ea77986cc406aa288129fbbe270bd instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843113 id=bg-a13078be25ab46d892e75ea86919fddb instance=tomcat1 active=5 status=200 elapsed_ms=101.703755
+POC_TRACE event=BEGIN wall_ms=1792417843123 id=bg-d01085e6fec0489b9ab1755120ee90ea instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843129 id=bg-1f96e11b1c774d5286423af81c0f8d9c instance=tomcat1 active=5 status=200 elapsed_ms=101.572918
+POC_TRACE event=BEGIN wall_ms=1792417843137 id=bg-a613f8354d0245079f6743dda91beb5c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843159 id=bg-8169b21289d8474ba2387b0bde63f7ae instance=tomcat1 active=5 status=200 elapsed_ms=101.360352
+POC_TRACE event=BEGIN wall_ms=1792417843168 id=bg-0f619fd55da24a27b256e5d700e9db7a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843176 id=bg-75b7862c347e467d9cdb1c9405bed7a8 instance=tomcat1 active=5 status=200 elapsed_ms=101.568171
+POC_TRACE event=BEGIN wall_ms=1792417843184 id=bg-57db06e9cf89436f8601a63203fbbda2 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843196 id=bg-3fa7837a26324d6581fec94b1cac9ee2 instance=tomcat1 active=5 status=200 elapsed_ms=100.920088
+POC_TRACE event=BEGIN wall_ms=1792417843202 id=bg-0f033d2ac5f447c5ba92e31c00e3b51f instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843206 id=bg-471ea77986cc406aa288129fbbe270bd instance=tomcat1 active=5 status=200 elapsed_ms=101.055591
+POC_TRACE event=BEGIN wall_ms=1792417843215 id=bg-34d5133b6cce4be6a3039b017738f722 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843224 id=bg-d01085e6fec0489b9ab1755120ee90ea instance=tomcat1 active=5 status=200 elapsed_ms=101.015119
+POC_TRACE event=BEGIN wall_ms=1792417843232 id=bg-c4c18be654e74455b18e110c59919dae instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843239 id=bg-a613f8354d0245079f6743dda91beb5c instance=tomcat1 active=5 status=200 elapsed_ms=101.15849
+POC_TRACE event=BEGIN wall_ms=1792417843246 id=bg-5207a2e3c195414a9f1b56d74a7c836d instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843269 id=bg-0f619fd55da24a27b256e5d700e9db7a instance=tomcat1 active=5 status=200 elapsed_ms=101.047032
+POC_TRACE event=BEGIN wall_ms=1792417843278 id=bg-32344e7d294e4f1688e0a72ebb6e39a1 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843285 id=bg-57db06e9cf89436f8601a63203fbbda2 instance=tomcat1 active=5 status=200 elapsed_ms=101.110887
+POC_TRACE event=BEGIN wall_ms=1792417843295 id=bg-2b48db7050b041c4bb7c590946a1ae2f instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843303 id=bg-0f033d2ac5f447c5ba92e31c00e3b51f instance=tomcat1 active=5 status=200 elapsed_ms=101.030579
+POC_TRACE event=BEGIN wall_ms=1792417843310 id=bg-3c98fff145194d48a4485879b10763cc instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843316 id=bg-34d5133b6cce4be6a3039b017738f722 instance=tomcat1 active=5 status=200 elapsed_ms=100.543314
+POC_TRACE event=BEGIN wall_ms=1792417843324 id=bg-888b00ca41ce4a239a973148431836ea instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843333 id=bg-c4c18be654e74455b18e110c59919dae instance=tomcat1 active=5 status=200 elapsed_ms=100.528248
+POC_TRACE event=BEGIN wall_ms=1792417843343 id=bg-0aa96bf877dd45af94da694ccdcd495c instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843347 id=bg-5207a2e3c195414a9f1b56d74a7c836d instance=tomcat1 active=5 status=200 elapsed_ms=101.16315
+POC_TRACE event=BEGIN wall_ms=1792417843355 id=bg-938d7f6510124ae489ef3272843be2fd instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843379 id=bg-32344e7d294e4f1688e0a72ebb6e39a1 instance=tomcat1 active=5 status=200 elapsed_ms=100.887641
+POC_TRACE event=BEGIN wall_ms=1792417843387 id=bg-55dda97b6db54581963c856cabb28f80 instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843396 id=bg-2b48db7050b041c4bb7c590946a1ae2f instance=tomcat1 active=5 status=200 elapsed_ms=100.894501
+POC_TRACE event=BEGIN wall_ms=1792417843402 id=bg-dd1c50940afd4524afa921e3b9ed746a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843410 id=bg-3c98fff145194d48a4485879b10763cc instance=tomcat1 active=5 status=200 elapsed_ms=100.918774
+POC_TRACE event=BEGIN wall_ms=1792417843419 id=bg-f43c8be9696941e0ad956f102158deeb instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843425 id=bg-888b00ca41ce4a239a973148431836ea instance=tomcat1 active=5 status=200 elapsed_ms=101.220034
+POC_TRACE event=BEGIN wall_ms=1792417843434 id=bg-09e3f32717994f66af8d8459c084ae1e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843443 id=bg-0aa96bf877dd45af94da694ccdcd495c instance=tomcat1 active=5 status=200 elapsed_ms=100.601441
+POC_TRACE event=BEGIN wall_ms=1792417843456 id=probe-647250ea8ad947bc9d2245977b0a9dec instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843456 id=bg-938d7f6510124ae489ef3272843be2fd instance=tomcat1 active=5 status=200 elapsed_ms=100.926664
+POC_TRACE event=BEGIN wall_ms=1792417843464 id=bg-c8f76cc8c5cc4c5099916bc0c1eac64a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843488 id=bg-55dda97b6db54581963c856cabb28f80 instance=tomcat1 active=5 status=200 elapsed_ms=100.908096
+POC_TRACE event=BEGIN wall_ms=1792417843491 id=bg-0739b1ea47b34e508f46bbca9e60f49e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843503 id=bg-dd1c50940afd4524afa921e3b9ed746a instance=tomcat1 active=5 status=200 elapsed_ms=100.903822
+POC_TRACE event=BEGIN wall_ms=1792417843506 id=bg-c8407d784d194806895d5752c570126e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843520 id=bg-f43c8be9696941e0ad956f102158deeb instance=tomcat1 active=5 status=200 elapsed_ms=100.822717
+POC_TRACE event=END wall_ms=1792417843535 id=bg-09e3f32717994f66af8d8459c084ae1e instance=tomcat1 active=4 status=200 elapsed_ms=100.869139
+POC_TRACE event=BEGIN wall_ms=1792417843538 id=bg-29d85346b73a4a0682fc70f6c50fdeb9 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417843538 id=bg-d6ec2bdb917c4190aed94392b40143ca instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843565 id=bg-c8f76cc8c5cc4c5099916bc0c1eac64a instance=tomcat1 active=5 status=200 elapsed_ms=100.935895
+POC_TRACE event=END wall_ms=1792417843592 id=bg-0739b1ea47b34e508f46bbca9e60f49e instance=tomcat1 active=4 status=200 elapsed_ms=100.828143
+POC_TRACE event=BEGIN wall_ms=1792417843594 id=bg-419cd0e7f7464260a22c6c2d48c43827 instance=tomcat1 active=5
+POC_TRACE event=BEGIN wall_ms=1792417843594 id=bg-e8e3a37cd7de4bebad8787e3a077d15e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843607 id=bg-c8407d784d194806895d5752c570126e instance=tomcat1 active=5 status=200 elapsed_ms=100.564739
+POC_TRACE event=BEGIN wall_ms=1792417843610 id=bg-3fb702f75ce04f0f9180baaf5548ae60 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843624 id=bg-6b2102fdc4504004b83c6d0eb057cb6b instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843638 id=bg-29d85346b73a4a0682fc70f6c50fdeb9 instance=tomcat1 active=6 status=200 elapsed_ms=100.494924
+POC_TRACE event=END wall_ms=1792417843638 id=bg-d6ec2bdb917c4190aed94392b40143ca instance=tomcat1 active=5 status=200 elapsed_ms=100.464804
+POC_TRACE event=BEGIN wall_ms=1792417843660 id=bg-acb487d4b6ae4e3fb7f08b4b7fa5fd80 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843660 id=bg-a846bcd4480944bab1f3d376b9092322 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843695 id=bg-419cd0e7f7464260a22c6c2d48c43827 instance=tomcat1 active=5 status=200 elapsed_ms=100.819469
+POC_TRACE event=END wall_ms=1792417843695 id=bg-e8e3a37cd7de4bebad8787e3a077d15e instance=tomcat1 active=6 status=200 elapsed_ms=100.680476
+POC_TRACE event=BEGIN wall_ms=1792417843698 id=bg-5b15a27879f0455980981f487719810e instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843698 id=bg-a1625f0361e3467abf0e0011ac2c2b28 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843711 id=bg-3fb702f75ce04f0f9180baaf5548ae60 instance=tomcat1 active=6 status=200 elapsed_ms=100.790607
+POC_TRACE event=END wall_ms=1792417843725 id=bg-6b2102fdc4504004b83c6d0eb057cb6b instance=tomcat1 active=5 status=200 elapsed_ms=100.597685
+POC_TRACE event=BEGIN wall_ms=1792417843728 id=bg-d1b4506250f34fcebccbd497acb7c0f0 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843745 id=bg-6d7ef08d686a4ab7ad91b9d773e2e2a1 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843760 id=bg-acb487d4b6ae4e3fb7f08b4b7fa5fd80 instance=tomcat1 active=6 status=200 elapsed_ms=100.904891
+POC_TRACE event=END wall_ms=1792417843760 id=bg-a846bcd4480944bab1f3d376b9092322 instance=tomcat1 active=5 status=200 elapsed_ms=100.848868
+POC_TRACE event=BEGIN wall_ms=1792417843783 id=bg-2618e6475a514039ad6eca250b8cfb9c instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843783 id=bg-1a29c41d68a549e3997045d0923ca7ac instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843799 id=bg-5b15a27879f0455980981f487719810e instance=tomcat1 active=6 status=200 elapsed_ms=100.86383
+POC_TRACE event=END wall_ms=1792417843799 id=bg-a1625f0361e3467abf0e0011ac2c2b28 instance=tomcat1 active=5 status=200 elapsed_ms=100.73941
+POC_TRACE event=BEGIN wall_ms=1792417843818 id=bg-548da8e49ada45a1b81a5856f1044297 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843818 id=bg-dac1ce0715c343efb5138b5194c657a0 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843829 id=bg-d1b4506250f34fcebccbd497acb7c0f0 instance=tomcat1 active=6 status=200 elapsed_ms=101.011259
+POC_TRACE event=END wall_ms=1792417843846 id=bg-6d7ef08d686a4ab7ad91b9d773e2e2a1 instance=tomcat1 active=5 status=200 elapsed_ms=100.692843
+POC_TRACE event=BEGIN wall_ms=1792417843849 id=bg-475c326171f24e5eb481b312c45a2526 instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843865 id=bg-9e61bee2795a4720b11c799bc7b06128 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843883 id=bg-2618e6475a514039ad6eca250b8cfb9c instance=tomcat1 active=6 status=200 elapsed_ms=100.601423
+POC_TRACE event=END wall_ms=1792417843884 id=bg-1a29c41d68a549e3997045d0923ca7ac instance=tomcat1 active=5 status=200 elapsed_ms=100.799655
+POC_TRACE event=BEGIN wall_ms=1792417843886 id=bg-b88e506b919f4159b0c1806233ab4b8e instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843905 id=bg-345c22c92de142b0873afe76e20543a7 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843919 id=bg-548da8e49ada45a1b81a5856f1044297 instance=tomcat1 active=5 status=200 elapsed_ms=100.888321
+POC_TRACE event=END wall_ms=1792417843919 id=bg-dac1ce0715c343efb5138b5194c657a0 instance=tomcat1 active=6 status=200 elapsed_ms=100.660275
+POC_TRACE event=BEGIN wall_ms=1792417843934 id=bg-4521a4d4d9f149199c0f8bd4a1cb274e instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843950 id=bg-475c326171f24e5eb481b312c45a2526 instance=tomcat1 active=5 status=200 elapsed_ms=100.573166
+POC_TRACE event=BEGIN wall_ms=1792417843952 id=bg-83d10a2c1c1241eda3c2d119d42dbe5a instance=tomcat1 active=6
+POC_TRACE event=END wall_ms=1792417843966 id=bg-9e61bee2795a4720b11c799bc7b06128 instance=tomcat1 active=5 status=200 elapsed_ms=100.621804
+POC_TRACE event=BEGIN wall_ms=1792417843969 id=bg-113e5b6e2c324327a7778e5ecde999ac instance=tomcat1 active=6
+POC_TRACE event=BEGIN wall_ms=1792417843986 id=bg-deb1452fb5624fcdb7cbedadf8513441 instance=tomcat1 active=7
+POC_TRACE event=END wall_ms=1792417843987 id=bg-b88e506b919f4159b0c1806233ab4b8e instance=tomcat1 active=6 status=200 elapsed_ms=100.749923
+POC_TRACE event=END wall_ms=1792417844006 id=bg-345c22c92de142b0873afe76e20543a7 instance=tomcat1 active=5 status=200 elapsed_ms=101.130257
+POC_TRACE event=BEGIN wall_ms=1792417844009 id=bg-eadee29d45094de4a513ff9f2c87f610 instance=tomcat1 active=6

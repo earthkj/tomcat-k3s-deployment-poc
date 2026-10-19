@@ -1,0 +1,35 @@
+[
+  {
+    "event": "baseline_end",
+    "wall_ms": 1792417975842.6501,
+    "offset": 4.9837790000001405
+  },
+  {
+    "event": "stop_request",
+    "wall_ms": 1792417975843.6855,
+    "offset": 4.985024300000077
+  },
+  {
+    "event": "stop_ack",
+    "wall_ms": 1792417976905.6143,
+    "offset": 6.046794799998679,
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 143,
+      "Error": "",
+      "StartedAt": "2026-10-19T13:52:43.229317967Z",
+      "FinishedAt": "2026-10-19T13:52:56.188688169Z"
+    }
+  },
+  {
+    "event": "restart_ready",
+    "wall_ms": 1792417985538.965,
+    "offset": 14.68030759999965
+  }
+]

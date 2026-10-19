@@ -1,0 +1,14 @@
+.runtime/
+.cache/
+.tools/
+results/
+output/
+**/target/
+**/__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.zip

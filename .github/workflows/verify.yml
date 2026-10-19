@@ -1,0 +1,16 @@
+name: Verify source and published evidence
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regression checks with local synthetic servers
+        run: python -m unittest discover -s scripts -p "test_*.py"
+      - name: Audit preserved experiment and source hashes
+        run: python scripts/verify_evidence.py

@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1035" viewBox="0 0 1540 1035" role="img">
+<title>배포 아키텍처 비교</title>
+<rect width="100%" height="100%" fill="#f5f8fc"/>
+<text x="32" y="40" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="30" font-weight="700" fill="#172b42">요청 경로와 배포 제어</text>
+<text x="32" y="82" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="18" font-weight="400" fill="#52657a">기존 계층 배치 유지 · 요청 경로, JK Status 제어, Pod 교체 관계를 선 종류로 구분</text>
+<text x="24" y="265" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">요청 발생</text>
+<text x="24" y="359" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">진입점</text>
+<text x="24" y="465" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">웹 서버</text>
+<text x="24" y="562" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">서비스 라우팅</text>
+<text x="24" y="687" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">애플리케이션</text>
+<text x="24" y="866" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">데이터베이스</text>
+<rect x="166" y="116" width="312" height="804" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="21" font-weight="700" fill="#172b42">Tomcat 순차 배포</text>
+<text x="322" y="181" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#52657a">(현행)</text>
+<rect x="176" y="620" width="292" height="178" rx="12" fill="#f8fafc" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322" y="638" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat ×2</text>
+<rect x="202" y="240" width="240" height="50" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322.0" y="254.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">부하 발생기</text>
+<text x="322.0" y="279.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">100 RPS</text>
+<rect x="202" y="330" width="240" height="58" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322.0" y="348.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">HAProxy</text>
+<text x="322.0" y="373.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Round-robin</text>
+<rect x="202" y="430" width="240" height="70" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322.0" y="454.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Apache httpd ×2</text>
+<text x="322.0" y="479.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">mod_jk · AJP</text>
+<polyline points="322,290 322,330" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="322,330 327.0,322.0 317.0,322.0" fill="#64788c"/>
+<polyline points="322,388 322,430" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="322,430 327.0,422.0 317.0,422.0" fill="#64788c"/>
+<polyline points="322,500 322,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="334" y="565" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">AJP</text>
+<polyline points="250,630 394,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="250,630 250,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="250,656 255.0,648.0 245.0,648.0" fill="#64788c"/>
+<rect x="186" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="250.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="250.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<polyline points="394,630 394,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="394,656 399.0,648.0 389.0,648.0" fill="#64788c"/>
+<rect x="330" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="394.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="394.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<text x="322" y="764" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">정상 상태: 요청 처리 인스턴스 2개</text>
+<polyline points="322,798 322,834" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="322,834 327.0,826.0 317.0,826.0" fill="#64788c"/>
+<rect x="202" y="834" width="240" height="62" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="322.0" y="854.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">PostgreSQL</text>
+<text x="322.0" y="879.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">공통 읽기 전용 DB</text>
+<rect x="504" y="116" width="312" height="804" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="21" font-weight="700" fill="#172b42">k3s 컨테이너 롤링</text>
+<text x="660" y="181" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#52657a">Deployment · RollingUpdate</text>
+<rect x="514" y="620" width="292" height="178" rx="12" fill="#f8fafc" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660" y="638" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat Pod ×2</text>
+<rect x="512" y="518" width="296" height="286" rx="12" fill="#eff6fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="525" y="536" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="700" fill="#2870ae">k3s · 단일 노드</text>
+<rect x="514" y="620" width="292" height="178" rx="12" fill="#f8fafc" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660" y="638" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat Pod ×2</text>
+<rect x="540" y="240" width="240" height="50" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660.0" y="254.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">부하 발생기</text>
+<text x="660.0" y="279.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">100 RPS</text>
+<rect x="540" y="330" width="240" height="58" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660.0" y="348.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">HAProxy</text>
+<text x="660.0" y="373.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Round-robin</text>
+<rect x="540" y="430" width="240" height="70" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660.0" y="454.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Apache httpd ×2</text>
+<text x="660.0" y="479.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">mod_jk · AJP</text>
+<polyline points="660,290 660,330" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="660,330 665.0,322.0 655.0,322.0" fill="#64788c"/>
+<polyline points="660,388 660,430" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="660,430 665.0,422.0 655.0,422.0" fill="#64788c"/>
+<rect x="540" y="550" width="240" height="52" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="660.0" y="576.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Service (NodePort)</text>
+<polyline points="660,500 660,550" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="660,550 665.0,542.0 655.0,542.0" fill="#64788c"/>
+<polyline points="660,602 660,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="588,630 732,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="588,630 588,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="588,656 593.0,648.0 583.0,648.0" fill="#64788c"/>
+<rect x="524" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="588.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Pod A · v1</text>
+<text x="588.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat</text>
+<polyline points="732,630 732,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="732,656 737.0,648.0 727.0,648.0" fill="#64788c"/>
+<rect x="668" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="732.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Pod B · v1</text>
+<text x="732.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat</text>
+<polyline stroke-dasharray="7 5" points="588,716 588,744" fill="none" stroke="#7651a8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="588,744 593.0,736.0 583.0,736.0" fill="#7651a8"/>
+<rect x="524" y="744" width="128" height="40" rx="12" fill="#f4effa" stroke="#b8a3d5" stroke-width="1.4"/>
+<text x="588" y="764" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="700" fill="#7651a8">Pod A′ · v2</text>
+<polyline stroke-dasharray="7 5" points="732,716 732,744" fill="none" stroke="#7651a8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="732,744 737.0,736.0 727.0,736.0" fill="#7651a8"/>
+<rect x="668" y="744" width="128" height="40" rx="12" fill="#f4effa" stroke="#b8a3d5" stroke-width="1.4"/>
+<text x="732" y="764" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="700" fill="#7651a8">Pod B′ · v2</text>
+<polyline points="660,804 660,834" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="660,834 665.0,826.0 655.0,826.0" fill="#64788c"/>
+<rect x="540" y="834" width="240" height="62" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="660.0" y="854.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">PostgreSQL</text>
+<text x="660.0" y="879.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">공통 읽기 전용 DB</text>
+<rect x="842" y="116" width="312" height="804" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="21" font-weight="700" fill="#172b42">Tomcat 롤링</text>
+<text x="998" y="181" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#52657a">추가 인스턴스 방식</text>
+<rect x="852" y="620" width="292" height="178" rx="12" fill="#f8fafc" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998" y="638" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat ×2</text>
+<rect x="878" y="240" width="240" height="50" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998.0" y="254.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">부하 발생기</text>
+<text x="998.0" y="279.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">100 RPS</text>
+<rect x="878" y="330" width="240" height="58" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998.0" y="348.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">HAProxy</text>
+<text x="998.0" y="373.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Round-robin</text>
+<rect x="878" y="430" width="240" height="70" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998" y="449" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Apache httpd ×2</text>
+<text x="998" y="470" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">mod_jk · AJP</text>
+<text x="998" y="490" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">JK Status 관리 API</text>
+<rect x="1016" y="533" width="122" height="62" rx="12" fill="#eff8f4" stroke="#9bcabd" stroke-width="1.4"/>
+<text x="1077" y="551" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="700" fill="#147d68">배포 스크립트</text>
+<text x="1077" y="576" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="400" fill="#52657a">유입 제외 · 복귀</text>
+<polyline stroke-dasharray="7 5" points="1077,533 1077,500" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1077,500 1072.0,508.0 1082.0,508.0" fill="#147d68"/>
+<polyline points="998,290 998,330" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="998,330 1003.0,322.0 993.0,322.0" fill="#64788c"/>
+<polyline points="998,388 998,430" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="998,430 1003.0,422.0 993.0,422.0" fill="#64788c"/>
+<polyline points="998,500 998,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="986" y="565" text-anchor="end" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">AJP</text>
+<polyline points="926,630 1070,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="926,630 926,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="926,656 931.0,648.0 921.0,648.0" fill="#64788c"/>
+<rect x="862" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="926.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="926.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<polyline points="1070,630 1070,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1070,656 1075.0,648.0 1065.0,648.0" fill="#64788c"/>
+<rect x="1006" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1070.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="1070.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<rect x="862" y="738" width="128" height="44" rx="12" fill="#fafbfc" stroke="#d6e0ea" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="926" y="752" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">대기 Tomcat</text>
+<text x="926" y="770" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="400" fill="#52657a">미기동</text>
+<rect x="1006" y="738" width="128" height="44" rx="12" fill="#fafbfc" stroke="#d6e0ea" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="1070" y="752" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">대기 Tomcat</text>
+<text x="1070" y="770" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="400" fill="#52657a">미기동</text>
+<polyline points="998,798 998,834" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="998,834 1003.0,826.0 993.0,826.0" fill="#64788c"/>
+<rect x="878" y="834" width="240" height="62" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="998.0" y="854.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">PostgreSQL</text>
+<text x="998.0" y="879.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">공통 읽기 전용 DB</text>
+<rect x="1180" y="116" width="312" height="804" rx="12" fill="white" stroke="#9bcabd" stroke-width="1.4"/>
+<text x="1336" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="21" font-weight="700" fill="#172b42">Tomcat 롤링</text>
+<text x="1336" y="181" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#52657a">기존 인스턴스 방식</text>
+<text x="1336" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="700" fill="#147d68">최종 제안</text>
+<rect x="1190" y="620" width="292" height="178" rx="12" fill="#f8fafc" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1336" y="638" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Tomcat ×2</text>
+<rect x="1216" y="240" width="240" height="50" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1336.0" y="254.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">부하 발생기</text>
+<text x="1336.0" y="279.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">100 RPS</text>
+<rect x="1216" y="330" width="240" height="58" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1336.0" y="348.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">HAProxy</text>
+<text x="1336.0" y="373.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">Round-robin</text>
+<rect x="1216" y="430" width="240" height="70" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1336" y="449" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Apache httpd ×2</text>
+<text x="1336" y="470" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">mod_jk · AJP</text>
+<text x="1336" y="490" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">JK Status 관리 API</text>
+<rect x="1354" y="533" width="122" height="62" rx="12" fill="#eff8f4" stroke="#9bcabd" stroke-width="1.4"/>
+<text x="1415" y="551" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="700" fill="#147d68">배포 스크립트</text>
+<text x="1415" y="576" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="400" fill="#52657a">유입 제외 · 복귀</text>
+<polyline stroke-dasharray="7 5" points="1415,533 1415,500" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1415,500 1410.0,508.0 1420.0,508.0" fill="#147d68"/>
+<polyline points="1336,290 1336,330" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1336,330 1341.0,322.0 1331.0,322.0" fill="#64788c"/>
+<polyline points="1336,388 1336,430" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1336,430 1341.0,422.0 1331.0,422.0" fill="#64788c"/>
+<polyline points="1336,500 1336,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1324" y="565" text-anchor="end" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">AJP</text>
+<polyline points="1264,630 1408,630" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1264,630 1264,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1264,656 1269.0,648.0 1259.0,648.0" fill="#64788c"/>
+<rect x="1200" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1264.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="1264.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<polyline points="1408,630 1408,656" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1408,656 1413.0,648.0 1403.0,648.0" fill="#64788c"/>
+<rect x="1344" y="656" width="128" height="60" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1408.0" y="675.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Tomcat</text>
+<text x="1408.0" y="700.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">서비스 중</text>
+<text x="1336" y="764" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="13" font-weight="400" fill="#52657a">정상 상태: 요청 처리 인스턴스 2개</text>
+<polyline points="1336,798 1336,834" fill="none" stroke="#64788c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1336,834 1341.0,826.0 1331.0,826.0" fill="#64788c"/>
+<rect x="1216" y="834" width="240" height="62" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="1336.0" y="854.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">PostgreSQL</text>
+<text x="1336.0" y="879.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">공통 읽기 전용 DB</text>
+<text x="32" y="947" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">실선: 요청 경로 · 초록 점선: JK Status 관리 요청 · 보라 점선: 기존 Pod → 새 Pod 교체 관계</text>
+<text x="32" y="977" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">Pod A/B → A′/B′는 순차 교체 전후를 뜻함 · 4개 Pod 동시 서비스나 기존 Pod 내부 업데이트를 뜻하지 않음</text>
+<text x="32" y="1007" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">회색 점선 상자: 미기동 대기 Tomcat · DB: 동일한 공유 인스턴스 · 모든 비교군은 Windows/Docker에서 재현</text>
+</svg>

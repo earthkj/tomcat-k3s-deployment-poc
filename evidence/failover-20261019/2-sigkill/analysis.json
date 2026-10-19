@@ -1,0 +1,147 @@
+{
+  "case": "sigkill",
+  "run": 2,
+  "background": {
+    "normal": 806,
+    "delayed": 321
+  },
+  "successfulChangedWorkerRequests": 332,
+  "inFlightReplayedRequests": 5,
+  "inFlightReplayedBackgroundRequests": 4,
+  "delayedChangedWorkerBackgroundRequests": 321,
+  "probe": {
+    "requestId": "probe-9899fe99b5df4d578f1092619ff0078e",
+    "clientCalls": 1,
+    "clientSuccess": true,
+    "clientElapsedMs": 754.1743999991013,
+    "clientInstance": "tomcat2",
+    "tomcatTrace": [
+      {
+        "event": "BEGIN",
+        "wall_ms": "1792417924985",
+        "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+        "instance": "tomcat1",
+        "active": "6",
+        "source": "tomcat1"
+      },
+      {
+        "event": "BEGIN",
+        "wall_ms": "1792417925634",
+        "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+        "instance": "tomcat2",
+        "active": "11",
+        "source": "tomcat2"
+      },
+      {
+        "event": "END",
+        "wall_ms": "1792417925735",
+        "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+        "instance": "tomcat2",
+        "active": "7",
+        "status": "200",
+        "elapsed_ms": "100.518127",
+        "source": "tomcat2"
+      }
+    ],
+    "apacheAccess": [
+      {
+        "wall_ms": "1792417924985",
+        "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+        "status": "200",
+        "duration_us": "750251",
+        "first": "tomcat1",
+        "last": "tomcat2",
+        "first_busy": "3",
+        "last_busy": "3",
+        "first_errors": "4",
+        "last_errors": "0",
+        "source": "apache1"
+      }
+    ],
+    "haproxyAccess": [
+      {
+        "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+        "status": "200",
+        "server": "apache1",
+        "retries": "0",
+        "queue_ms": "0",
+        "connect_ms": "1",
+        "response_ms": "750",
+        "active_ms": "751",
+        "source": "haproxy"
+      }
+    ],
+    "oneFrontRequestNoRetry": true,
+    "killRequestWallMs": 1792417925445.189,
+    "targetBeginBeforeKill": true,
+    "confirmed": true
+  },
+  "error": null,
+  "examples": [
+    {
+      "wall_ms": "1792417925415",
+      "id": "bg-b4baf8119efc421f8f460e88c677070d",
+      "status": "200",
+      "duration_us": "314973",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "5",
+      "last_busy": "6",
+      "first_errors": "2",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417925478",
+      "id": "bg-301ae4067cb6454b86006508105f9d4e",
+      "status": "200",
+      "duration_us": "252631",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "5",
+      "last_busy": "5",
+      "first_errors": "2",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417924985",
+      "id": "probe-9899fe99b5df4d578f1092619ff0078e",
+      "status": "200",
+      "duration_us": "750251",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "3",
+      "last_busy": "3",
+      "first_errors": "4",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417925448",
+      "id": "bg-acae5fde0dee4a0b8bbf48af0be55d0a",
+      "status": "200",
+      "duration_us": "281958",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "5",
+      "last_busy": "6",
+      "first_errors": "1",
+      "last_errors": "0",
+      "source": "apache2"
+    },
+    {
+      "wall_ms": "1792417925414",
+      "id": "bg-00b0ff027b3d414396ef38dc9be78d6a",
+      "status": "200",
+      "duration_us": "315792",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "4",
+      "last_busy": "5",
+      "first_errors": "2",
+      "last_errors": "0",
+      "source": "apache2"
+    }
+  ]
+}

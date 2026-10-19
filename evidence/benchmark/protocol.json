@@ -1,0 +1,25 @@
+{
+  "createdAt": "2026-10-17T11:38:52.700040+00:00",
+  "plannedModes": [
+    "legacy",
+    "k3s",
+    "bluegreen",
+    "rolling"
+  ],
+  "count": 10,
+  "pilot": false,
+  "rps": 100,
+  "warmupSeconds": 5,
+  "baselineSeconds": 5,
+  "postDeploySeconds": 5,
+  "profile": "quick",
+  "ajpKeepAliveTimeoutMs": 1000,
+  "gracefulStopAwaitMillis": 30000,
+  "requestTimeoutSeconds": 30,
+  "thresholdMs": 300,
+  "versionPolicy": "alternate v1/v2 per mode; only identification markers differ",
+  "orderPolicy": "balanced four-mode Williams order; no adjacent identical modes; all modes receive each position once per four rounds",
+  "preserveInvalidRuns": true,
+  "noReplacementRuns": true,
+  "sourceFingerprint": "ad8ac79e06d33e8d0211be0ec17f2e3fd050f1262fcb2240ea645dbd47ad469d"
+}

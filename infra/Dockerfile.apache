@@ -1,0 +1,6 @@
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends apache2 libapache2-mod-jk ca-certificates curl && rm -rf /var/lib/apt/lists/* && a2enmod jk proxy proxy_http proxy_ajp proxy_balancer lbmethod_byrequests proxy_hcheck && rm /etc/apache2/mods-enabled/jk.conf && a2dissite 000-default
+COPY infra/apache.conf /etc/apache2/sites-enabled/poc.conf
+COPY infra/apache-start.sh /usr/local/bin/poc-apache
+RUN chmod +x /usr/local/bin/poc-apache && printf '\nServerName localhost\n' >> /etc/apache2/apache2.conf && printf 'ServerLimit 1\nThreadLimit 200\nThreadsPerChild 200\nMaxRequestWorkers 200\n' > /etc/apache2/conf-enabled/poc-workers.conf
+ENTRYPOINT ["/usr/local/bin/poc-apache"]

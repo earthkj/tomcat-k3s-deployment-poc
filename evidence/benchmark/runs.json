@@ -1,0 +1,4362 @@
+[
+  {
+    "mode": "legacy",
+    "run": 1,
+    "round": 1,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:39:57.972540+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.3407000033767,
+        "p99_ms": 105.62039999786066,
+        "max_ms": 148.89319999929285
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.61569999804487,
+        "p99_ms": 104.5735000006971,
+        "max_ms": 105.6825999985449
+      },
+      "during": {
+        "scheduled": 1786,
+        "sent": 1786,
+        "normal": 1519,
+        "delayed": 267,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1217.056000001321,
+        "p99_ms": 1237.1142000047257,
+        "max_ms": 1387.2262000004412
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.78839999611955,
+        "p99_ms": 106.24349999852711,
+        "max_ms": 108.23050000180956
+      },
+      "overall": {
+        "scheduled": 2786,
+        "sent": 2786,
+        "normal": 2519,
+        "delayed": 267,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1119.0795000002254,
+        "p99_ms": 1234.6646000005421,
+        "max_ms": 1387.2262000004412
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003432000012253411,
+          "utc": "2026-10-17T11:39:57.976717+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000401299999794
+        },
+        {
+          "event": "deploy_end",
+          "offset": 27.85895950000122
+        },
+        {
+          "event": "send_stop",
+          "offset": 32.85957050000434
+        },
+        {
+          "event": "collection_end",
+          "offset": 32.955950100003975
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "a6722b42-a900-4455-b1dd-5fd5423ff7b4",
+    "finishedAt": "2026-10-17T11:40:30.965127+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 1,
+    "round": 1,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:40:46.158384+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.30320000159554,
+        "p99_ms": 105.79040000448003,
+        "max_ms": 141.4199999999255
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.70550000516232,
+        "p99_ms": 104.61850000137929,
+        "max_ms": 105.5837000021711
+      },
+      "during": {
+        "scheduled": 3459,
+        "sent": 3459,
+        "normal": 3459,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.98980000172742,
+        "p99_ms": 106.49290000583278,
+        "max_ms": 111.02989999926649
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97769999690354,
+        "p99_ms": 107.20880000008037,
+        "max_ms": 110.2995999972336
+      },
+      "overall": {
+        "scheduled": 4459,
+        "sent": 4459,
+        "normal": 4459,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.95040000003064,
+        "p99_ms": 106.49290000583278,
+        "max_ms": 111.02989999926649
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003586000020732172,
+          "utc": "2026-10-17T11:40:46.160507+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.004350099996373
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.582260700000916
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.58266989999538
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.687266799999634
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "b483a066-fe0d-4fbf-817f-ecf20ba2f340",
+    "finishedAt": "2026-10-17T11:41:35.891716+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 1,
+    "round": 1,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:42:00.548472+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.25859999668319,
+        "p99_ms": 105.24769999756245,
+        "max_ms": 149.3759000004502
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.77199999493314,
+        "p99_ms": 104.56439999688882,
+        "max_ms": 110.43229999631876
+      },
+      "during": {
+        "scheduled": 4001,
+        "sent": 4001,
+        "normal": 4001,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.89109999960056,
+        "p99_ms": 107.05350000353064,
+        "max_ms": 121.22309999540448
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.78400000627153,
+        "p99_ms": 107.60519999894314,
+        "max_ms": 109.16530000395142
+      },
+      "overall": {
+        "scheduled": 5001,
+        "sent": 5001,
+        "normal": 5001,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.8572000034037,
+        "p99_ms": 107.02999999921303,
+        "max_ms": 121.22309999540448
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003603999939514324,
+          "utc": "2026-10-17T11:42:00.550059+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001100299996324
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.00847989999602
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.00855859999865
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.11519729999418
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "cb989f59-2707-4836-a210-d6d8c7a99a40",
+    "finishedAt": "2026-10-17T11:42:55.713115+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 1,
+    "round": 1,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:43:14.134940+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.45429999526823,
+        "p99_ms": 105.99689999799011,
+        "max_ms": 132.8852000006009
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.82079999544658,
+        "p99_ms": 104.95980000268901,
+        "max_ms": 108.85789999883855
+      },
+      "during": {
+        "scheduled": 3938,
+        "sent": 3938,
+        "normal": 3938,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97299999749521,
+        "p99_ms": 108.58379999990575,
+        "max_ms": 112.40359999646898
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.77719999814872,
+        "p99_ms": 107.89279999880819,
+        "max_ms": 109.67460000392748
+      },
+      "overall": {
+        "scheduled": 4938,
+        "sent": 4938,
+        "normal": 4938,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.939900000114,
+        "p99_ms": 108.31400000461144,
+        "max_ms": 112.40359999646898
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00038810000114608556,
+          "utc": "2026-10-17T11:43:14.137018+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00055219999922
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.375196699998924
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.376042099996994
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.477126300000236
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "bef70ea4-7ef6-4ec6-9659-eac5128f979c",
+    "finishedAt": "2026-10-17T11:44:08.661581+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 2,
+    "round": 2,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:44:26.211731+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.39469999982975,
+        "p99_ms": 106.87049999978626,
+        "max_ms": 152.67840000160504
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.66390000126557,
+        "p99_ms": 106.90969999996014,
+        "max_ms": 108.01670000364538
+      },
+      "during": {
+        "scheduled": 3452,
+        "sent": 3452,
+        "normal": 3452,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.90740000002552,
+        "p99_ms": 109.14480000064941,
+        "max_ms": 114.18640000192681
+      },
+      "after": {
+        "scheduled": 501,
+        "sent": 501,
+        "normal": 501,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.82070000196109,
+        "p99_ms": 109.80220000055851,
+        "max_ms": 110.37719999876572
+      },
+      "overall": {
+        "scheduled": 4453,
+        "sent": 4453,
+        "normal": 4453,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.86219999782043,
+        "p99_ms": 109.08180000114953,
+        "max_ms": 114.18640000192681
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003625999961514026,
+          "utc": "2026-10-17T11:44:26.213836+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000266299997747
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.520856999995885
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.521008099996834
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.627298999999766
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "37b12c1e-283d-4a2a-a27a-d5091c18fe3f",
+    "finishedAt": "2026-10-17T11:45:15.883616+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 2,
+    "round": 2,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:45:40.314163+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.45880000042962,
+        "p99_ms": 119.90769999829354,
+        "max_ms": 141.85400000133086
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.50350000610342,
+        "p99_ms": 107.39689999900293,
+        "max_ms": 114.91359999490669
+      },
+      "during": {
+        "scheduled": 3912,
+        "sent": 3912,
+        "normal": 3912,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.8817000007839,
+        "p99_ms": 109.6871000045212,
+        "max_ms": 121.62180000450462
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.48250000242842,
+        "p99_ms": 110.00770000100601,
+        "max_ms": 112.13010000210488
+      },
+      "overall": {
+        "scheduled": 4912,
+        "sent": 4912,
+        "normal": 4912,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.9493999996921,
+        "p99_ms": 109.65599999326514,
+        "max_ms": 121.62180000450462
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00037209999572951347,
+          "utc": "2026-10-17T11:45:40.316274+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00073749999865
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.111416399995505
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.111458300001686
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.218118500000855
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "12daa2f1-10b4-4605-93f1-0243c9d7ec22",
+    "finishedAt": "2026-10-17T11:46:34.580411+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 2,
+    "round": 2,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:46:53.285141+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.37970000202768,
+        "p99_ms": 104.91970000293804,
+        "max_ms": 124.93230000109179
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.74869999941438,
+        "p99_ms": 104.89609999785898,
+        "max_ms": 105.96179999993183
+      },
+      "during": {
+        "scheduled": 1752,
+        "sent": 1752,
+        "normal": 1481,
+        "delayed": 271,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1216.639500002202,
+        "p99_ms": 1236.246000000392,
+        "max_ms": 1367.7505000014207
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.88689999672351,
+        "p99_ms": 106.51069999585161,
+        "max_ms": 107.12889999558683
+      },
+      "overall": {
+        "scheduled": 2752,
+        "sent": 2752,
+        "normal": 2481,
+        "delayed": 271,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1145.4627999992226,
+        "p99_ms": 1234.4037000002572,
+        "max_ms": 1367.7505000014207
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003806000022450462,
+          "utc": "2026-10-17T11:46:53.286730+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.005504200002179
+        },
+        {
+          "event": "deploy_end",
+          "offset": 27.51267640000151
+        },
+        {
+          "event": "send_stop",
+          "offset": 32.5131748000058
+        },
+        {
+          "event": "collection_end",
+          "offset": 32.617020600002434
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "6170cb40-0e19-48eb-9eb5-ecb2133393c4",
+    "finishedAt": "2026-10-17T11:47:25.943608+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 2,
+    "round": 2,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:47:44.435139+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.22059999837074,
+        "p99_ms": 104.754399995727,
+        "max_ms": 131.28400000277907
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.64069999923231,
+        "p99_ms": 104.69210000155726,
+        "max_ms": 109.00120000587776
+      },
+      "during": {
+        "scheduled": 4057,
+        "sent": 4057,
+        "normal": 4057,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.84200000407873,
+        "p99_ms": 107.17109999677632,
+        "max_ms": 113.51070000091568
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.86650000145892,
+        "p99_ms": 107.86739999457495,
+        "max_ms": 110.11229999712668
+      },
+      "overall": {
+        "scheduled": 5057,
+        "sent": 5057,
+        "normal": 5057,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.82209999806946,
+        "p99_ms": 107.17109999677632,
+        "max_ms": 113.51070000091568
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003595000016503036,
+          "utc": "2026-10-17T11:47:44.436724+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000555400001758
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.56933829999616
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.56956689999788
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.665560800000094
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "67e7a87f-bbed-4160-b57a-0844b8426bfd",
+    "finishedAt": "2026-10-17T11:48:40.151047+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 3,
+    "round": 3,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:48:59.053791+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.83300000487361,
+        "p99_ms": 106.7544999968959,
+        "max_ms": 133.68389999959618
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.6829000004218,
+        "p99_ms": 106.69260000577196,
+        "max_ms": 107.97679999814136
+      },
+      "during": {
+        "scheduled": 4035,
+        "sent": 4035,
+        "normal": 4035,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.90439999900991,
+        "p99_ms": 109.57580000103917,
+        "max_ms": 113.42609999701381
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.84089999570278,
+        "p99_ms": 110.20339999959106,
+        "max_ms": 114.02530000486877
+      },
+      "overall": {
+        "scheduled": 5035,
+        "sent": 5035,
+        "normal": 5035,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.89260000374634,
+        "p99_ms": 109.54730000230484,
+        "max_ms": 114.02530000486877
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003543999991961755,
+          "utc": "2026-10-17T11:48:59.055402+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001226899999892
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.34264800000528
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.34332930000528
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.447429400002875
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "aaf92a48-b580-4649-b5f2-ccc818c58544",
+    "finishedAt": "2026-10-17T11:49:54.550677+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 3,
+    "round": 3,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:50:13.033269+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.24960000091232,
+        "p99_ms": 105.04930000024615,
+        "max_ms": 151.8008999992162
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.00659999868367,
+        "p99_ms": 104.42199999670265,
+        "max_ms": 105.96850000001723
+      },
+      "during": {
+        "scheduled": 3950,
+        "sent": 3950,
+        "normal": 3950,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.87429999536835,
+        "p99_ms": 107.17819999990752,
+        "max_ms": 116.13600000418955
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97920000104932,
+        "p99_ms": 107.2411999994074,
+        "max_ms": 109.91890000150306
+      },
+      "overall": {
+        "scheduled": 4950,
+        "sent": 4950,
+        "normal": 4950,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.93320000002859,
+        "p99_ms": 107.14450000523357,
+        "max_ms": 116.13600000418955
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00034810000215657055,
+          "utc": "2026-10-17T11:50:13.035393+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001034300003084
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.49511170000187
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.4953949999981
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.59739709999849
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "17194026-bd6e-4784-8aac-d55bf3ada9e1",
+    "finishedAt": "2026-10-17T11:51:07.677988+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 3,
+    "round": 3,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:51:23.260154+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.34640000312356,
+        "p99_ms": 106.35020000336226,
+        "max_ms": 143.22909999464173
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.77249999874039,
+        "p99_ms": 104.68120000587078,
+        "max_ms": 105.97730000154115
+      },
+      "during": {
+        "scheduled": 3447,
+        "sent": 3447,
+        "normal": 3447,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97260000172537,
+        "p99_ms": 106.78339999867603,
+        "max_ms": 115.31560000003083
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.13409999455325,
+        "p99_ms": 107.27229999611154,
+        "max_ms": 112.54829999961657
+      },
+      "overall": {
+        "scheduled": 4447,
+        "sent": 4447,
+        "normal": 4447,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.9565000028233,
+        "p99_ms": 106.80910000519361,
+        "max_ms": 115.31560000003083
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00036589999945135787,
+          "utc": "2026-10-17T11:51:23.262834+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000969300002907
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.46313139999984
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.4633204999991
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.56732670000201
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "7ae1a87c-2aed-42af-ada5-911a075dabf0",
+    "finishedAt": "2026-10-17T11:52:12.873466+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 3,
+    "round": 3,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:52:37.517642+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.32709999440704,
+        "p99_ms": 105.12890000245534,
+        "max_ms": 137.6012000037008
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.70770000008633,
+        "p99_ms": 105.1828999989084,
+        "max_ms": 107.6212999978452
+      },
+      "during": {
+        "scheduled": 1835,
+        "sent": 1835,
+        "normal": 1570,
+        "delayed": 265,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1213.7542999989819,
+        "p99_ms": 1233.715000002121,
+        "max_ms": 1298.785200000566
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.83650000585476,
+        "p99_ms": 108.05319999781204,
+        "max_ms": 113.09959999925923
+      },
+      "overall": {
+        "scheduled": 2835,
+        "sent": 2835,
+        "normal": 2570,
+        "delayed": 265,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1105.2387000017916,
+        "p99_ms": 1230.944199996884,
+        "max_ms": 1298.785200000566
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003400999994482845,
+          "utc": "2026-10-17T11:52:37.519732+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001232899994648
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.342464699999255
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.343327099995804
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.446032599997125
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "805d834b-2d3c-4cba-b323-443d6cf0f2f9",
+    "finishedAt": "2026-10-17T11:53:10.999395+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 4,
+    "round": 4,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:53:29.543093+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.66900000028545,
+        "p99_ms": 105.72899999533547,
+        "max_ms": 133.20769999700133
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.59299999981886,
+        "p99_ms": 106.93690000334755,
+        "max_ms": 110.06980000092881
+      },
+      "during": {
+        "scheduled": 3986,
+        "sent": 3986,
+        "normal": 3986,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.9253999988432,
+        "p99_ms": 109.56459999579238,
+        "max_ms": 118.0711000051815
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.04939999716589,
+        "p99_ms": 109.94819999905303,
+        "max_ms": 113.46079999930225
+      },
+      "overall": {
+        "scheduled": 4986,
+        "sent": 4986,
+        "normal": 4986,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.88090000196826,
+        "p99_ms": 109.57579999376321,
+        "max_ms": 118.0711000051815
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00032980000105453655,
+          "utc": "2026-10-17T11:53:29.545179+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000238900000113
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.85695560000022
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.857198799996695
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.95670719999907
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "3d749a3b-7225-479c-92b5-145d669d75e4",
+    "finishedAt": "2026-10-17T11:54:24.553077+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 4,
+    "round": 4,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:54:42.977292+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.35990000405582,
+        "p99_ms": 105.4299000024912,
+        "max_ms": 143.38100000168197
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.72410000127275,
+        "p99_ms": 104.47929999645567,
+        "max_ms": 108.39319999649888
+      },
+      "during": {
+        "scheduled": 1802,
+        "sent": 1802,
+        "normal": 1525,
+        "delayed": 277,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1218.427799998608,
+        "p99_ms": 1341.3734000059776,
+        "max_ms": 1587.9357999947388
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.9364000025671,
+        "p99_ms": 106.78409999673022,
+        "max_ms": 112.28709999704733
+      },
+      "overall": {
+        "scheduled": 2802,
+        "sent": 2802,
+        "normal": 2525,
+        "delayed": 277,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1203.9129999975557,
+        "p99_ms": 1255.476300000737,
+        "max_ms": 1587.9357999947388
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003519999954733066,
+          "utc": "2026-10-17T11:54:42.979437+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000264899994363
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.0114195999995
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.01202669999475
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.11678089999623
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "adb9fb28-25f9-45ac-a359-0d94bb1b542b",
+    "finishedAt": "2026-10-17T11:55:16.128269+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 4,
+    "round": 4,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:55:34.864133+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.41649999847868,
+        "p99_ms": 105.91980000026524,
+        "max_ms": 132.93710000289138
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.62359999999171,
+        "p99_ms": 106.71100000035949,
+        "max_ms": 108.55959999753395
+      },
+      "during": {
+        "scheduled": 4002,
+        "sent": 4002,
+        "normal": 4002,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97269999521086,
+        "p99_ms": 109.10990000411402,
+        "max_ms": 114.6152000001166
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.51919999811798,
+        "p99_ms": 108.067300003313,
+        "max_ms": 111.76349999732338
+      },
+      "overall": {
+        "scheduled": 5002,
+        "sent": 5002,
+        "normal": 5002,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.91330000129528,
+        "p99_ms": 108.86649999883957,
+        "max_ms": 114.6152000001166
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00037000000156695023,
+          "utc": "2026-10-17T11:55:34.866234+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000426300000981
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.0192212999973
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.022733799996786
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.127986699997564
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "e31aec61-37f0-40fb-bec7-5ccdc1690431",
+    "finishedAt": "2026-10-17T11:56:30.041975+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 4,
+    "round": 4,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:56:45.145065+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.78390000207582,
+        "p99_ms": 108.13739999866812,
+        "max_ms": 137.26360000146087
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.67820000101347,
+        "p99_ms": 104.26880000159144,
+        "max_ms": 106.08520000096178
+      },
+      "during": {
+        "scheduled": 3456,
+        "sent": 3456,
+        "normal": 3456,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.00460000528255,
+        "p99_ms": 106.96670000470476,
+        "max_ms": 115.20809999638004
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.9634999979171,
+        "p99_ms": 107.29079999873647,
+        "max_ms": 108.82780000247294
+      },
+      "overall": {
+        "scheduled": 4456,
+        "sent": 4456,
+        "normal": 4456,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96550000587013,
+        "p99_ms": 106.83980000612792,
+        "max_ms": 115.20809999638004
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003426000039326027,
+          "utc": "2026-10-17T11:56:45.147182+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000433000001067
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.559852300000784
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.560905999998795
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.65754849999939
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "6069adc6-f6e4-4236-b774-73dfc0af0fc5",
+    "finishedAt": "2026-10-17T11:57:34.852875+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 5,
+    "round": 5,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T11:57:59.011269+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.43829999712761,
+        "p99_ms": 105.3775999971549,
+        "max_ms": 126.76910000300268
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.71179999492597,
+        "p99_ms": 104.12180000275839,
+        "max_ms": 104.87659999489551
+      },
+      "during": {
+        "scheduled": 1834,
+        "sent": 1834,
+        "normal": 1573,
+        "delayed": 261,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1211.4099000027636,
+        "p99_ms": 1234.10330000479,
+        "max_ms": 1299.9611999985063
+      },
+      "after": {
+        "scheduled": 501,
+        "sent": 501,
+        "normal": 501,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.83010000077775,
+        "p99_ms": 107.15770000388147,
+        "max_ms": 120.92129999655299
+      },
+      "overall": {
+        "scheduled": 2835,
+        "sent": 2835,
+        "normal": 2574,
+        "delayed": 261,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1029.9738999965484,
+        "p99_ms": 1231.8318000034196,
+        "max_ms": 1299.9611999985063
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00042810000013560057,
+          "utc": "2026-10-17T11:57:59.015213+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001086999996915
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.340575499998522
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.34108769999875
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.448300299998664
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "99053175-d891-4bf4-b7cd-05e5101d7a85",
+    "finishedAt": "2026-10-17T11:58:32.495760+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 5,
+    "round": 5,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T11:58:48.159333+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.4047999967006,
+        "p99_ms": 106.39389999414561,
+        "max_ms": 131.6179999994347
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.65279999678023,
+        "p99_ms": 105.77239999838639,
+        "max_ms": 107.23819999839179
+      },
+      "during": {
+        "scheduled": 3458,
+        "sent": 3458,
+        "normal": 3458,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.99200000392739,
+        "p99_ms": 107.00429999997141,
+        "max_ms": 117.97520000254735
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.76230000110809,
+        "p99_ms": 108.06450000382029,
+        "max_ms": 110.57569999684347
+      },
+      "overall": {
+        "scheduled": 4458,
+        "sent": 4458,
+        "normal": 4458,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.92229999706615,
+        "p99_ms": 107.00429999997141,
+        "max_ms": 117.97520000254735
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003830999994534068,
+          "utc": "2026-10-17T11:58:48.161496+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.004572499994538
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.571945799994865
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.57216299999709
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.67780169999605
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "4aa3f0a9-0915-4cc4-b533-da1cb64f90fb",
+    "finishedAt": "2026-10-17T11:59:37.890161+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 5,
+    "round": 5,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:00:02.240066+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.53599999891594,
+        "p99_ms": 106.6826999958721,
+        "max_ms": 135.67020000482444
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.83809999621008,
+        "p99_ms": 106.60490000009304,
+        "max_ms": 108.39250000572065
+      },
+      "during": {
+        "scheduled": 4020,
+        "sent": 4020,
+        "normal": 4020,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.90059999917867,
+        "p99_ms": 109.82220000005327,
+        "max_ms": 112.61959999683313
+      },
+      "after": {
+        "scheduled": 501,
+        "sent": 501,
+        "normal": 501,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.2950999981258,
+        "p99_ms": 110.4985000056331,
+        "max_ms": 112.68559999734862
+      },
+      "overall": {
+        "scheduled": 5021,
+        "sent": 5021,
+        "normal": 5021,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.94130000349833,
+        "p99_ms": 109.75640000106068,
+        "max_ms": 112.68559999734862
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003727000002982095,
+          "utc": "2026-10-17T12:00:02.241663+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000969499997154
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.200424299997394
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.20081110000319
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.30727710000065
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "5811be3b-f02a-445b-9fb3-089d4426bd5c",
+    "finishedAt": "2026-10-17T12:00:57.595861+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 5,
+    "round": 5,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:01:16.530872+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.36640000261832,
+        "p99_ms": 104.83270000258926,
+        "max_ms": 135.66200000059325
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.72329999518115,
+        "p99_ms": 104.25550000218209,
+        "max_ms": 106.97390000132145
+      },
+      "during": {
+        "scheduled": 3897,
+        "sent": 3897,
+        "normal": 3897,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.95069999503903,
+        "p99_ms": 107.01219999464229,
+        "max_ms": 112.53929999656975
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.753899995354,
+        "p99_ms": 107.75529999955324,
+        "max_ms": 113.76439999730792
+      },
+      "overall": {
+        "scheduled": 4897,
+        "sent": 4897,
+        "normal": 4897,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.87869999976829,
+        "p99_ms": 107.00749999523396,
+        "max_ms": 113.76439999730792
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003695999985211529,
+          "utc": "2026-10-17T12:01:16.533521+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.005181299995456
+        },
+        {
+          "event": "deploy_end",
+          "offset": 48.960994999994
+        },
+        {
+          "event": "send_stop",
+          "offset": 53.96157519999542
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.06644129999768
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "117bd909-fc24-4c30-897e-fbcb9956364c",
+    "finishedAt": "2026-10-17T12:02:10.670451+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 6,
+    "round": 6,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:02:28.215656+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.54240000399295,
+        "p99_ms": 106.8301999985124,
+        "max_ms": 138.3002000002307
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.7709999945946,
+        "p99_ms": 105.01340000337223,
+        "max_ms": 107.16349999711383
+      },
+      "during": {
+        "scheduled": 3455,
+        "sent": 3455,
+        "normal": 3455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.04539999581175,
+        "p99_ms": 107.39720000128727,
+        "max_ms": 115.2700000020559
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.83970000111731,
+        "p99_ms": 108.9122999983374,
+        "max_ms": 112.72340000141412
+      },
+      "overall": {
+        "scheduled": 4455,
+        "sent": 4455,
+        "normal": 4455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.99950000282843,
+        "p99_ms": 107.19750000134809,
+        "max_ms": 115.2700000020559
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.000356700002157595,
+          "utc": "2026-10-17T12:02:28.217772+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.002176000001782
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.546655900005135
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.547331500005384
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.64793959999952
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "0fe154ec-1d40-4579-8e90-6bc05578ce23",
+    "finishedAt": "2026-10-17T12:03:17.918317+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 6,
+    "round": 6,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:03:43.060266+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.63680000248132,
+        "p99_ms": 114.07459999463754,
+        "max_ms": 136.55149999976857
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.32070000388194,
+        "p99_ms": 107.09659999702126,
+        "max_ms": 109.55220000323607
+      },
+      "during": {
+        "scheduled": 3798,
+        "sent": 3798,
+        "normal": 3798,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.04379999818048,
+        "p99_ms": 109.14880000200355,
+        "max_ms": 119.04630000208272
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.5736000048928,
+        "p99_ms": 109.79039999801898,
+        "max_ms": 110.847099997045
+      },
+      "overall": {
+        "scheduled": 4798,
+        "sent": 4798,
+        "normal": 4798,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.08849999657832,
+        "p99_ms": 109.14880000200355,
+        "max_ms": 119.04630000208272
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00036270000418880954,
+          "utc": "2026-10-17T12:03:43.062353+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000546900002519
+        },
+        {
+          "event": "deploy_end",
+          "offset": 47.97793559999991
+        },
+        {
+          "event": "send_stop",
+          "offset": 52.97872660000576
+        },
+        {
+          "event": "collection_end",
+          "offset": 53.07671390000178
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "1dc1e978-569b-4324-ae45-c5ecf7dc8a5e",
+    "finishedAt": "2026-10-17T12:04:36.184766+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 6,
+    "round": 6,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:04:54.939588+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.96710000006715,
+        "p99_ms": 106.24190000089584,
+        "max_ms": 138.1039000043529
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.74959999899147,
+        "p99_ms": 104.58900000230642,
+        "max_ms": 106.95059999852674
+      },
+      "during": {
+        "scheduled": 1826,
+        "sent": 1826,
+        "normal": 1535,
+        "delayed": 291,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1224.3605999974534,
+        "p99_ms": 1389.932599995518,
+        "max_ms": 1578.8097999975435
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.93560000375146,
+        "p99_ms": 106.44670000328915,
+        "max_ms": 107.69119999895338
+      },
+      "overall": {
+        "scheduled": 2826,
+        "sent": 2826,
+        "normal": 2535,
+        "delayed": 291,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1211.920400004601,
+        "p99_ms": 1343.7189999967813,
+        "max_ms": 1578.8097999975435
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.000502500006405171,
+          "utc": "2026-10-17T12:04:54.941746+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000309200004267
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.259023099999467
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.25987420000456
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.357825500002946
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "94bf4f54-8a4f-445f-80f5-0d0474d31c46",
+    "finishedAt": "2026-10-17T12:05:28.332494+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 6,
+    "round": 6,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:05:46.870629+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.30519999499666,
+        "p99_ms": 104.95130000344943,
+        "max_ms": 132.62830000167014
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.67949999636039,
+        "p99_ms": 104.39449999830686,
+        "max_ms": 105.31529999570921
+      },
+      "during": {
+        "scheduled": 3995,
+        "sent": 3995,
+        "normal": 3995,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.03539999970235,
+        "p99_ms": 107.58569999597967,
+        "max_ms": 116.63920000137296
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.8717000046745,
+        "p99_ms": 108.17540000425652,
+        "max_ms": 111.72660000011092
+      },
+      "overall": {
+        "scheduled": 4995,
+        "sent": 4995,
+        "normal": 4995,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96739999850979,
+        "p99_ms": 107.5529000008828,
+        "max_ms": 116.63920000137296
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.000469600003270898,
+          "utc": "2026-10-17T12:05:46.872779+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000053200004913
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.94149490000564
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.941962200005946
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.047032500006026
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "16479096-7c83-481e-a823-458828e6341e",
+    "finishedAt": "2026-10-17T12:06:41.965789+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 7,
+    "round": 7,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:07:01.040331+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.37760000058915,
+        "p99_ms": 105.75300000346033,
+        "max_ms": 124.02000000292901
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.80530000111321,
+        "p99_ms": 107.29139999602921,
+        "max_ms": 108.3717000001343
+      },
+      "during": {
+        "scheduled": 3882,
+        "sent": 3882,
+        "normal": 3882,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.99389999656705,
+        "p99_ms": 109.55079999985173,
+        "max_ms": 113.40019999624928
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.5520000004908,
+        "p99_ms": 110.31189999630442,
+        "max_ms": 112.01779999828432
+      },
+      "overall": {
+        "scheduled": 4882,
+        "sent": 4882,
+        "normal": 4882,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.94850000011502,
+        "p99_ms": 109.51159999967786,
+        "max_ms": 113.40019999624928
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.000370699999621138,
+          "utc": "2026-10-17T12:07:01.042453+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000532199999725
+        },
+        {
+          "event": "deploy_end",
+          "offset": 48.816511199998786
+        },
+        {
+          "event": "send_stop",
+          "offset": 53.81729999999516
+        },
+        {
+          "event": "collection_end",
+          "offset": 53.91768289999891
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "a34415ee-666d-4358-9373-92a745d70c0a",
+    "finishedAt": "2026-10-17T12:07:55.006976+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 7,
+    "round": 7,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:08:13.919388+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.27030000573723,
+        "p99_ms": 104.70199999690522,
+        "max_ms": 132.00299999880372
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.95160000189207,
+        "p99_ms": 105.71429999981774,
+        "max_ms": 106.5013999977964
+      },
+      "during": {
+        "scheduled": 3969,
+        "sent": 3969,
+        "normal": 3969,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97820000071079,
+        "p99_ms": 107.37170000356855,
+        "max_ms": 114.81389999971725
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.93420000036713,
+        "p99_ms": 107.46439999638824,
+        "max_ms": 109.09489999903599
+      },
+      "overall": {
+        "scheduled": 4969,
+        "sent": 4969,
+        "normal": 4969,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96559999935562,
+        "p99_ms": 107.28289999678964,
+        "max_ms": 114.81389999971725
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003507000001263805,
+          "utc": "2026-10-17T12:08:13.921545+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.005759799998486
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.68287969999801
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.682900799998606
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.78748530000303
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "b2d57a9e-0eaf-4f4b-bd52-1cbbe9cbe481",
+    "finishedAt": "2026-10-17T12:09:08.755832+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 7,
+    "round": 7,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:09:26.188224+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.51009999815142,
+        "p99_ms": 124.2666999969515,
+        "max_ms": 145.93579999927897
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.93369999655988,
+        "p99_ms": 105.01659999863477,
+        "max_ms": 106.32669999904465
+      },
+      "during": {
+        "scheduled": 3455,
+        "sent": 3455,
+        "normal": 3455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96049999690149,
+        "p99_ms": 107.08650000015041,
+        "max_ms": 122.00830000074347
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.98159999749623,
+        "p99_ms": 107.05060000327649,
+        "max_ms": 109.97029999998631
+      },
+      "overall": {
+        "scheduled": 4455,
+        "sent": 4455,
+        "normal": 4455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96049999690149,
+        "p99_ms": 106.8821000008029,
+        "max_ms": 122.00830000074347
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003491000024951063,
+          "utc": "2026-10-17T12:09:26.190347+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001198400001158
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.54999649999809
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.55042809999577
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.647129199998744
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "0323210e-0c24-4960-b91b-d888deff6a2b",
+    "finishedAt": "2026-10-17T12:10:15.879965+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 7,
+    "round": 7,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:10:40.651949+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.9429999984568,
+        "p99_ms": 109.94320000463631,
+        "max_ms": 137.43370000156574
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.71479999594158,
+        "p99_ms": 104.48570000153268,
+        "max_ms": 106.55070000211708
+      },
+      "during": {
+        "scheduled": 1801,
+        "sent": 1801,
+        "normal": 1530,
+        "delayed": 271,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1215.9823999973014,
+        "p99_ms": 1240.1937999966322,
+        "max_ms": 1428.174200002104
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.19350000302074,
+        "p99_ms": 108.03160000068601,
+        "max_ms": 123.97350000537699
+      },
+      "overall": {
+        "scheduled": 2801,
+        "sent": 2801,
+        "normal": 2530,
+        "delayed": 271,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1135.2069999993546,
+        "p99_ms": 1234.7680999955628,
+        "max_ms": 1428.174200002104
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00038669999776175246,
+          "utc": "2026-10-17T12:10:40.654066+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00053189999744
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.00852339999983
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.008573799997976
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.115270299997064
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "e9250ce1-8194-4557-b5f2-abb6dbf52fc5",
+    "finishedAt": "2026-10-17T12:11:13.803942+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 8,
+    "round": 8,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:11:33.014592+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.27640000125393,
+        "p99_ms": 105.30009999638423,
+        "max_ms": 128.38929999998072
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.8157999937539,
+        "p99_ms": 106.03689999697963,
+        "max_ms": 107.80250000243541
+      },
+      "during": {
+        "scheduled": 3992,
+        "sent": 3992,
+        "normal": 3992,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.05739999987418,
+        "p99_ms": 109.64380000223173,
+        "max_ms": 195.50910000543809
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.06359999615233,
+        "p99_ms": 108.44769999675918,
+        "max_ms": 114.99650000041584
+      },
+      "overall": {
+        "scheduled": 4992,
+        "sent": 4992,
+        "normal": 4992,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.02669999893988,
+        "p99_ms": 109.17760000302223,
+        "max_ms": 195.50910000543809
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003496999997878447,
+          "utc": "2026-10-17T12:11:33.016723+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001813299997593
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.91619049999281
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.91628639999544
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.01748409999709
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "5e13f8f7-e3a0-4708-99c9-edcaf0e2770d",
+    "finishedAt": "2026-10-17T12:12:28.112919+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 8,
+    "round": 8,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:12:47.075472+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.39559999940684,
+        "p99_ms": 115.81360000127461,
+        "max_ms": 145.82929999596672
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.71570000279462,
+        "p99_ms": 104.49350000271806,
+        "max_ms": 106.49649999686517
+      },
+      "during": {
+        "scheduled": 1810,
+        "sent": 1810,
+        "normal": 1533,
+        "delayed": 277,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1217.4625999978161,
+        "p99_ms": 1257.0731000014348,
+        "max_ms": 1480.9190000014496
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.90229999757139,
+        "p99_ms": 106.29679999692598,
+        "max_ms": 107.34180000144988
+      },
+      "overall": {
+        "scheduled": 2810,
+        "sent": 2810,
+        "normal": 2533,
+        "delayed": 277,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1204.0835000007064,
+        "p99_ms": 1234.5583000060287,
+        "max_ms": 1480.9190000014496
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00036050000198883936,
+          "utc": "2026-10-17T12:12:47.079158+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00554209999973
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.097889199998463
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.098079399998824
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.19709409999632
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "06e246f5-5104-4b4a-bf85-a20e0a886300",
+    "finishedAt": "2026-10-17T12:13:20.310501+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 8,
+    "round": 8,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:13:39.395311+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.48639999958687,
+        "p99_ms": 105.71599999821046,
+        "max_ms": 129.10160000319593
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.71250000025611,
+        "p99_ms": 104.5799999992596,
+        "max_ms": 105.63220000040019
+      },
+      "during": {
+        "scheduled": 3944,
+        "sent": 3944,
+        "normal": 3944,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.0045000045211,
+        "p99_ms": 107.29279999941355,
+        "max_ms": 113.02170000271872
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.71909999958007,
+        "p99_ms": 108.91180000180611,
+        "max_ms": 112.54099999496248
+      },
+      "overall": {
+        "scheduled": 4944,
+        "sent": 4944,
+        "normal": 4944,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.93190000468167,
+        "p99_ms": 107.29279999941355,
+        "max_ms": 113.02170000271872
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00033429999893996865,
+          "utc": "2026-10-17T12:13:39.397399+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000822899994091
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.43768519999867
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.43775899999309
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.53706479999528
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "054cfc5f-9a75-41b3-934d-abf8a6e1ab0a",
+    "finishedAt": "2026-10-17T12:14:33.980690+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 8,
+    "round": 8,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:14:49.175663+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 105.29060000408208,
+        "p99_ms": 106.13739999826066,
+        "max_ms": 107.93870000634342
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.81139999662992,
+        "p99_ms": 106.69709999638144,
+        "max_ms": 107.54119999910472
+      },
+      "during": {
+        "scheduled": 3458,
+        "sent": 3458,
+        "normal": 3458,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.07850000046892,
+        "p99_ms": 109.46819999662694,
+        "max_ms": 120.45999999827472
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.06430000148248,
+        "p99_ms": 110.10590000660159,
+        "max_ms": 115.21270000230288
+      },
+      "overall": {
+        "scheduled": 4458,
+        "sent": 4458,
+        "normal": 4458,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.0346999943722,
+        "p99_ms": 109.44999999628635,
+        "max_ms": 120.45999999827472
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00035940000088885427,
+          "utc": "2026-10-17T12:14:49.177776+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000952300004428
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.57754600000044
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.5783792000002
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.678643200000806
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "5a99ed27-b7a5-4069-876c-8f0fbe39b4a1",
+    "finishedAt": "2026-10-17T12:15:38.899979+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 9,
+    "round": 9,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:16:04.093281+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.29660000227159,
+        "p99_ms": 104.75669999868842,
+        "max_ms": 118.98370000562863
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.6960999990697,
+        "p99_ms": 104.54409999510972,
+        "max_ms": 107.25709999678656
+      },
+      "during": {
+        "scheduled": 1866,
+        "sent": 1866,
+        "normal": 1585,
+        "delayed": 281,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1224.5729999995092,
+        "p99_ms": 1303.756400004204,
+        "max_ms": 1557.3695000057342
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.98410000198055,
+        "p99_ms": 106.88870000012685,
+        "max_ms": 110.60949999955483
+      },
+      "overall": {
+        "scheduled": 2866,
+        "sent": 2866,
+        "normal": 2585,
+        "delayed": 281,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1208.3877999975812,
+        "p99_ms": 1273.0203999963123,
+        "max_ms": 1557.3695000057342
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.00034779999987222254,
+          "utc": "2026-10-17T12:16:04.095396+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00028719999682
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.656459199999517
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.65749969999888
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.75761899999634
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "b5b563fb-49e5-49b4-bb6c-18bfe02a04f9",
+    "finishedAt": "2026-10-17T12:16:37.885193+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 9,
+    "round": 9,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:16:53.224066+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.45699999399949,
+        "p99_ms": 106.30449999734992,
+        "max_ms": 120.15709999832325
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.84820000035688,
+        "p99_ms": 104.84010000072885,
+        "max_ms": 108.48580000310903
+      },
+      "during": {
+        "scheduled": 3454,
+        "sent": 3454,
+        "normal": 3454,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.03099999530241,
+        "p99_ms": 107.67359999590553,
+        "max_ms": 115.22269999841228
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.88889999740059,
+        "p99_ms": 107.37309999967692,
+        "max_ms": 110.93280000204686
+      },
+      "overall": {
+        "scheduled": 4454,
+        "sent": 4454,
+        "normal": 4454,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.98320000240346,
+        "p99_ms": 107.40449999866541,
+        "max_ms": 115.22269999841228
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.000345199994626455,
+          "utc": "2026-10-17T12:16:53.226181+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000552099998458
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.53453599999921
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.53510969999479
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.637990600000194
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "837b6b3c-c4c1-4958-9640-bdf5257af186",
+    "finishedAt": "2026-10-17T12:17:42.908062+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 9,
+    "round": 9,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:18:07.285513+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.58150000340538,
+        "p99_ms": 112.54840000037802,
+        "max_ms": 141.8294999966747
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.6378999997396,
+        "p99_ms": 104.36340000160271,
+        "max_ms": 106.09519999707118
+      },
+      "during": {
+        "scheduled": 4077,
+        "sent": 4077,
+        "normal": 4077,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.12680000445107,
+        "p99_ms": 107.87010000058217,
+        "max_ms": 118.01440000272123
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.90689999621827,
+        "p99_ms": 108.16930000146385,
+        "max_ms": 112.74789999879431
+      },
+      "overall": {
+        "scheduled": 5077,
+        "sent": 5077,
+        "normal": 5077,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.02919999614824,
+        "p99_ms": 107.78230000141775,
+        "max_ms": 118.01440000272123
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003495999990263954,
+          "utc": "2026-10-17T12:18:07.287633+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000542900001165
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.768903399999544
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.76979370000481
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.867140700000164
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "299042a1-b20a-4fd6-a0f4-738eab9cf5cd",
+    "finishedAt": "2026-10-17T12:19:03.204113+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 9,
+    "round": 9,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:19:22.468430+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.28700000193203,
+        "p99_ms": 104.96119999879738,
+        "max_ms": 142.21930000348948
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.77149999840185,
+        "p99_ms": 104.29499999736436,
+        "max_ms": 106.01399999723071
+      },
+      "during": {
+        "scheduled": 4067,
+        "sent": 4067,
+        "normal": 4067,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.96659999969415,
+        "p99_ms": 107.29580000042915,
+        "max_ms": 112.52850000164472
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.47970000293572,
+        "p99_ms": 107.69730000174604,
+        "max_ms": 108.94759999791859
+      },
+      "overall": {
+        "scheduled": 5067,
+        "sent": 5067,
+        "normal": 5067,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.91880000679521,
+        "p99_ms": 107.25929999898653,
+        "max_ms": 112.52850000164472
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0004916999969282188,
+          "utc": "2026-10-17T12:19:22.471109+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000388100001146
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.66198450000229
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.66240419999667
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.76757689999795
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "07cdf809-82cd-4e14-bde8-4a352ea4db6a",
+    "finishedAt": "2026-10-17T12:20:18.286364+00:00"
+  },
+  {
+    "mode": "k3s",
+    "run": 10,
+    "round": 10,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:20:36.246262+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.3366000012611,
+        "p99_ms": 105.99269999511307,
+        "max_ms": 124.44220000179484
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.914999999688,
+        "p99_ms": 104.71580000012182,
+        "max_ms": 108.27419999986887
+      },
+      "during": {
+        "scheduled": 3455,
+        "sent": 3455,
+        "normal": 3455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.14710000623018,
+        "p99_ms": 107.08899999735877,
+        "max_ms": 118.32319999666652
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.98870000062743,
+        "p99_ms": 107.15049999998882,
+        "max_ms": 107.92590000346536
+      },
+      "overall": {
+        "scheduled": 4455,
+        "sent": 4455,
+        "normal": 4455,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.08849999657832,
+        "p99_ms": 107.03110000031302,
+        "max_ms": 118.32319999666652
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003499000013107434,
+          "utc": "2026-10-17T12:20:36.248386+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.001171500000055
+        },
+        {
+          "event": "deploy_end",
+          "offset": 44.54176340000413
+        },
+        {
+          "event": "send_stop",
+          "offset": 49.54281280000578
+        },
+        {
+          "event": "collection_end",
+          "offset": 49.64790240000002
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "7a1af91d-2098-42dd-b2ff-de8246ebc793",
+    "finishedAt": "2026-10-17T12:21:25.941986+00:00"
+  },
+  {
+    "mode": "bluegreen",
+    "run": 10,
+    "round": 10,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:21:50.629074+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.5150999998441,
+        "p99_ms": 104.88990000158083,
+        "max_ms": 148.12739999615587
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.81909999705385,
+        "p99_ms": 104.2786999969394,
+        "max_ms": 105.1586999965366
+      },
+      "during": {
+        "scheduled": 3914,
+        "sent": 3914,
+        "normal": 3914,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.0218999987701,
+        "p99_ms": 107.13060000125552,
+        "max_ms": 116.7284999974072
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.66070000600303,
+        "p99_ms": 107.90730000007898,
+        "max_ms": 109.4876999995904
+      },
+      "overall": {
+        "scheduled": 4914,
+        "sent": 4914,
+        "normal": 4914,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.95600000629202,
+        "p99_ms": 107.09359999600565,
+        "max_ms": 116.7284999974072
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003546999942045659,
+          "utc": "2026-10-17T12:21:50.631188+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.000910499999009
+        },
+        {
+          "event": "deploy_end",
+          "offset": 49.135315299994545
+        },
+        {
+          "event": "send_stop",
+          "offset": 54.13597409999784
+        },
+        {
+          "event": "collection_end",
+          "offset": 54.23754409999674
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "c723d085-023b-441c-bd45-ea7e086df959",
+    "finishedAt": "2026-10-17T12:22:44.915417+00:00"
+  },
+  {
+    "mode": "legacy",
+    "run": 10,
+    "round": 10,
+    "fromVersion": "v1",
+    "toVersion": "v2",
+    "startedAt": "2026-10-17T12:23:03.551620+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.2107000030228,
+        "p99_ms": 104.64179999689804,
+        "max_ms": 139.63080000394257
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.77929999958724,
+        "p99_ms": 104.29850000218721,
+        "max_ms": 107.0149000006495
+      },
+      "during": {
+        "scheduled": 1879,
+        "sent": 1879,
+        "normal": 1588,
+        "delayed": 291,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1227.701599993452,
+        "p99_ms": 1472.5923000005423,
+        "max_ms": 1662.0677000028081
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.94629999791505,
+        "p99_ms": 106.59490000398364,
+        "max_ms": 107.61490000004414
+      },
+      "overall": {
+        "scheduled": 2879,
+        "sent": 2879,
+        "normal": 2588,
+        "delayed": 291,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 1213.465200002247,
+        "p99_ms": 1387.098800005333,
+        "max_ms": 1662.0677000028081
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003642999945441261,
+          "utc": "2026-10-17T12:23:03.553725+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00063489999593
+        },
+        {
+          "event": "deploy_end",
+          "offset": 28.784235799997987
+        },
+        {
+          "event": "send_stop",
+          "offset": 33.78497639999841
+        },
+        {
+          "event": "collection_end",
+          "offset": 33.88692109999829
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "8f5ff4b4-e3ce-4e4e-b07d-7c7eb390498c",
+    "finishedAt": "2026-10-17T12:23:37.473388+00:00"
+  },
+  {
+    "mode": "rolling",
+    "run": 10,
+    "round": 10,
+    "fromVersion": "v2",
+    "toVersion": "v1",
+    "startedAt": "2026-10-17T12:23:56.333856+00:00",
+    "summary": {
+      "warmup": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.33370000100695,
+        "p99_ms": 105.21120000339579,
+        "max_ms": 138.6525999987498
+      },
+      "before": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.75159999966854,
+        "p99_ms": 104.28769999998622,
+        "max_ms": 105.05080000439193
+      },
+      "during": {
+        "scheduled": 4025,
+        "sent": 4025,
+        "normal": 4025,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97479999664938,
+        "p99_ms": 107.42549999849871,
+        "max_ms": 115.63410000235308
+      },
+      "after": {
+        "scheduled": 500,
+        "sent": 500,
+        "normal": 500,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 104.17990000132704,
+        "p99_ms": 108.23979999986477,
+        "max_ms": 112.78820000006817
+      },
+      "overall": {
+        "scheduled": 5025,
+        "sent": 5025,
+        "normal": 5025,
+        "delayed": 0,
+        "failed": 0,
+        "unsent": 0,
+        "failureRatePercent": 0.0,
+        "p95_ms": 103.97479999664938,
+        "p99_ms": 107.38160000619246,
+        "max_ms": 115.63410000235308
+      },
+      "loadValid": true,
+      "events": [
+        {
+          "event": "start",
+          "offset": 0.0003521000035107136,
+          "utc": "2026-10-17T12:23:56.335960+00:00",
+          "rps": 100
+        },
+        {
+          "event": "deploy_start",
+          "offset": 10.00113710000005
+        },
+        {
+          "event": "deploy_end",
+          "offset": 50.24305979999917
+        },
+        {
+          "event": "send_stop",
+          "offset": 55.24383730000409
+        },
+        {
+          "event": "collection_end",
+          "offset": 55.34589670000423
+        }
+      ],
+      "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+      "baselineValid": true,
+      "deploymentComplete": true,
+      "liveMonitorHealthy": true,
+      "protocol": {
+        "rps": 100,
+        "warmupSeconds": 5,
+        "baselineSeconds": 5,
+        "postDeploySeconds": 5,
+        "thresholdMs": 300,
+        "requestTimeoutSeconds": 30
+      }
+    },
+    "resultFolder": "85e37a58-5638-476d-acab-fe49af723159",
+    "finishedAt": "2026-10-17T12:24:51.729431+00:00"
+  }
+]

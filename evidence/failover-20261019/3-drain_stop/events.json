@@ -1,0 +1,471 @@
+[
+  {
+    "event": "baseline_end",
+    "wall_ms": 1792418030139.1145,
+    "offset": 5.004183300001387
+  },
+  {
+    "event": "probe_begin_observed",
+    "wall_ms": 1792418030271.3477,
+    "offset": 5.136538100001417,
+    "request_id": "probe-1cdc19f6241744558fdcfb2944066f0c"
+  },
+  {
+    "event": "before_action",
+    "wall_ms": 1792418030738.829,
+    "offset": 5.603886000000784,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "132",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "3"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "132",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "2"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "138",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "2"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "138",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "2"
+        }
+      ]
+    }
+  },
+  {
+    "event": "exclude_request",
+    "wall_ms": 1792418030739.362,
+    "offset": 5.6044709000016155
+  },
+  {
+    "event": "exclude_ack",
+    "wall_ms": 1792418032069.6526,
+    "offset": 6.935159399999975,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "1"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "182",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "183",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418032484.4917,
+    "offset": 7.3499012000011135,
+    "busy": 1,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "1"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "205",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "204",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "6"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418033117.519,
+    "offset": 7.982597400001396,
+    "busy": 1,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "1"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "235",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "6"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "235",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418033769.9624,
+    "offset": 8.635135100001207,
+    "busy": 0,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "267",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "268",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418034389.9695,
+    "offset": 9.255484799999977,
+    "busy": 0,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "298",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "299",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418035034.0322,
+    "offset": 9.899546900000132,
+    "busy": 0,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "330",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "331",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418035675.684,
+    "offset": 10.541032900000573,
+    "busy": 0,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "363",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "364",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_sample",
+    "wall_ms": 1792418036326.4285,
+    "offset": 11.191430700000637,
+    "busy": 0,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "150",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "394",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "STP",
+          "state": "OK",
+          "elected": "160",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "0"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "396",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "5"
+        }
+      ]
+    }
+  },
+  {
+    "event": "drain_complete",
+    "wall_ms": 1792418036326.9695,
+    "offset": 11.192363000000114
+  },
+  {
+    "event": "stop_ack",
+    "wall_ms": 1792418037306.942,
+    "offset": 12.172163300001557,
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 143,
+      "Error": "",
+      "StartedAt": "2026-10-19T13:53:37.626790063Z",
+      "FinishedAt": "2026-10-19T13:53:56.573112256Z"
+    }
+  }
+]

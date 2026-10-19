@@ -1,0 +1,11 @@
+{
+  "case": "sigkill",
+  "run": 3,
+  "rps": 100,
+  "probeId": "probe-0ec472189475414f8931befb6b94c33c",
+  "probeHoldTargetMs": 2500,
+  "thresholdMs": 300,
+  "clientRetries": 0,
+  "error": null,
+  "probeExcludedFromBackgroundMetrics": true
+}

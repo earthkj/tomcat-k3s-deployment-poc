@@ -1,0 +1,11 @@
+{
+  "case": "drain_stop",
+  "run": 3,
+  "rps": 100,
+  "probeId": "probe-1cdc19f6241744558fdcfb2944066f0c",
+  "probeHoldTargetMs": 2500,
+  "thresholdMs": 300,
+  "clientRetries": 0,
+  "error": null,
+  "probeExcludedFromBackgroundMetrics": true
+}

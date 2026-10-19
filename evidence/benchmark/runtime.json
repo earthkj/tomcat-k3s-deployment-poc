@@ -1,0 +1,14 @@
+{
+  "docker": {
+    "version": "28.4.0",
+    "cpus": 24,
+    "memoryBytes": 33219039232
+  },
+  "imageId": "sha256:23e047f6cbfe48476068fff18e533ec99d010d37d1d83cb76fbbca440f6c3420",
+  "java": "openjdk 21.0.12.1 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)",
+  "warSha256": "7b22c9638a9d84658836da7135f3726bfb9643894e3ceecf2360d22e2de1dcf7",
+  "k3s": "k3s version v1.36.5+k3s1 (3dd98cc5)\ngo version go1.26.8",
+  "postgres": "postgres (PostgreSQL) 13.23 (Debian 13.23-1.pgdg12+1)",
+  "maxConnections": "600",
+  "serverXmlSha256": "2ddd5977531676c61b11591fac683113899a72b9ee05bbf2faf962a58a39cac9"
+}

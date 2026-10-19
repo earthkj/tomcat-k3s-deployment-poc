@@ -1,0 +1,99 @@
+{
+  "warmup": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 104.96710000006715,
+    "p99_ms": 106.24190000089584,
+    "max_ms": 138.1039000043529
+  },
+  "before": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.74959999899147,
+    "p99_ms": 104.58900000230642,
+    "max_ms": 106.95059999852674
+  },
+  "during": {
+    "scheduled": 1826,
+    "sent": 1826,
+    "normal": 1535,
+    "delayed": 291,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 1224.3605999974534,
+    "p99_ms": 1389.932599995518,
+    "max_ms": 1578.8097999975435
+  },
+  "after": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.93560000375146,
+    "p99_ms": 106.44670000328915,
+    "max_ms": 107.69119999895338
+  },
+  "overall": {
+    "scheduled": 2826,
+    "sent": 2826,
+    "normal": 2535,
+    "delayed": 291,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 1211.920400004601,
+    "p99_ms": 1343.7189999967813,
+    "max_ms": 1578.8097999975435
+  },
+  "loadValid": true,
+  "events": [
+    {
+      "event": "start",
+      "offset": 0.000502500006405171,
+      "utc": "2026-10-17T12:04:54.941746+00:00",
+      "rps": 100
+    },
+    {
+      "event": "deploy_start",
+      "offset": 10.000309200004267
+    },
+    {
+      "event": "deploy_end",
+      "offset": 28.259023099999467
+    },
+    {
+      "event": "send_stop",
+      "offset": 33.25987420000456
+    },
+    {
+      "event": "collection_end",
+      "offset": 33.357825500002946
+    }
+  ],
+  "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+  "baselineValid": true,
+  "deploymentComplete": true,
+  "liveMonitorHealthy": true,
+  "protocol": {
+    "rps": 100,
+    "warmupSeconds": 5,
+    "baselineSeconds": 5,
+    "postDeploySeconds": 5,
+    "thresholdMs": 300,
+    "requestTimeoutSeconds": 30
+  }
+}

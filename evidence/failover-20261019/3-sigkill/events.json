@@ -1,0 +1,84 @@
+[
+  {
+    "event": "baseline_end",
+    "wall_ms": 1792418005245.8174,
+    "offset": 4.991751300000033
+  },
+  {
+    "event": "probe_begin_observed",
+    "wall_ms": 1792418005255.367,
+    "offset": 5.001286299999265,
+    "request_id": "probe-0ec472189475414f8931befb6b94c33c"
+  },
+  {
+    "event": "before_action",
+    "wall_ms": 1792418005712.615,
+    "offset": 5.458911600000647,
+    "jk": {
+      "apache1": [
+        {
+          "name": "tomcat1",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "129",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "2"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "129",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "3"
+        }
+      ],
+      "apache2": [
+        {
+          "name": "tomcat1",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "135",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "4"
+        },
+        {
+          "name": "tomcat2",
+          "activation": "ACT",
+          "state": "OK",
+          "elected": "134",
+          "errors": "0",
+          "client_errors": "0",
+          "busy": "2"
+        }
+      ]
+    }
+  },
+  {
+    "event": "kill_request",
+    "wall_ms": 1792418005713.7012,
+    "offset": 5.459658499999932,
+    "request_id": "probe-0ec472189475414f8931befb6b94c33c"
+  },
+  {
+    "event": "kill_ack",
+    "wall_ms": 1792418006539.2937,
+    "offset": 6.285290699999678,
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 137,
+      "Error": "",
+      "StartedAt": "2026-10-19T13:53:12.798004336Z",
+      "FinishedAt": "2026-10-19T13:53:25.866923761Z"
+    }
+  }
+]

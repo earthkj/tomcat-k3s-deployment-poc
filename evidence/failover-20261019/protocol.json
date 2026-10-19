@@ -1,0 +1,24 @@
+{
+  "createdAt": "2026-10-19T13:49:56.104618+00:00",
+  "cases": [
+    "sequential_stop",
+    "sigkill",
+    "drain_stop"
+  ],
+  "count": 3,
+  "rps": 100,
+  "appImageId": "sha256:23e047f6cbfe48476068fff18e533ec99d010d37d1d83cb76fbbca440f6c3420",
+  "apacheImageId": "sha256:28c0590f55751ac10c9d844e62cc5f61e3f41b10d342d1159ab5dd32b119a57d",
+  "probePolicy": "Only marked probe on tomcat1 waits 2500ms before application. Probe metrics excluded from normal 100ms background. No client retries.",
+  "original40RunsUnchanged": true,
+  "warSha256": "7b22c9638a9d84658836da7135f3726bfb9643894e3ceecf2360d22e2de1dcf7",
+  "sourceHashes": {
+    "scripts/diagnose_failover.py": "cfa85e0bc44faa1b8ee9d9ecb2433809ba968b3d596cb448a8be4e0cfde8d87f",
+    "scripts/load.py": "54e0db9c8abfaf6fd376fae7ff492f9e446ac8c82bb305ad6b13881ed5330ade",
+    "infra/apache-start.sh": "8b7bffb0e97cfde09db1cd62b2ec43927bd898efb0e232bcbcae0ae658c0131a",
+    "infra/server.xml": "2ddd5977531676c61b11591fac683113899a72b9ee05bbf2faf962a58a39cac9",
+    "scripts/diagnostics/apache.conf": "35966e49de4bf4f18bf12ab67d479fe4f828f8869a39bff076e7639b51136ce9",
+    "scripts/diagnostics/haproxy.cfg": "5206bd6a04f26c77a1eaf785839337a913971fa72ffd8bb26bd30380a4f0154c",
+    "scripts/diagnostics/TraceValve.java": "ed7fb8bee7937a522969338d7c7f73b1cd41244a508e722cc220e765b0fafd94"
+  }
+}

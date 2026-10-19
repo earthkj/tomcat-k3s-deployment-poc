@@ -1,0 +1,99 @@
+{
+  "warmup": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 104.45699999399949,
+    "p99_ms": 106.30449999734992,
+    "max_ms": 120.15709999832325
+  },
+  "before": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.84820000035688,
+    "p99_ms": 104.84010000072885,
+    "max_ms": 108.48580000310903
+  },
+  "during": {
+    "scheduled": 3454,
+    "sent": 3454,
+    "normal": 3454,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 104.03099999530241,
+    "p99_ms": 107.67359999590553,
+    "max_ms": 115.22269999841228
+  },
+  "after": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.88889999740059,
+    "p99_ms": 107.37309999967692,
+    "max_ms": 110.93280000204686
+  },
+  "overall": {
+    "scheduled": 4454,
+    "sent": 4454,
+    "normal": 4454,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.98320000240346,
+    "p99_ms": 107.40449999866541,
+    "max_ms": 115.22269999841228
+  },
+  "loadValid": true,
+  "events": [
+    {
+      "event": "start",
+      "offset": 0.000345199994626455,
+      "utc": "2026-10-17T12:16:53.226181+00:00",
+      "rps": 100
+    },
+    {
+      "event": "deploy_start",
+      "offset": 10.000552099998458
+    },
+    {
+      "event": "deploy_end",
+      "offset": 44.53453599999921
+    },
+    {
+      "event": "send_stop",
+      "offset": 49.53510969999479
+    },
+    {
+      "event": "collection_end",
+      "offset": 49.637990600000194
+    }
+  ],
+  "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+  "baselineValid": true,
+  "deploymentComplete": true,
+  "liveMonitorHealthy": true,
+  "protocol": {
+    "rps": 100,
+    "warmupSeconds": 5,
+    "baselineSeconds": 5,
+    "postDeploySeconds": 5,
+    "thresholdMs": 300,
+    "requestTimeoutSeconds": 30
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "counts": {
+    "legacy": 10,
+    "k3s": 10,
+    "rolling": 10,
+    "bluegreen": 10
+  },
+  "finishedAt": "2026-10-17T12:25:13.030018+00:00",
+  "initialServicesRestored": true
+}

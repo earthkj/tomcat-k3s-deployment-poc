@@ -1,0 +1,62 @@
+{
+  "legacy": {
+    "attempts": 10,
+    "complete": 10,
+    "valid": 10,
+    "sent": 18191,
+    "failed": 0,
+    "delayed": 2752,
+    "failureRatePercent": 0.0,
+    "delayedRatePercent": 15.128360178110054,
+    "zeroImpactRuns": 0,
+    "p99": 1281.2885000021197,
+    "medianDeploymentSeconds": 18.175530499996967,
+    "minDeploymentSeconds": 17.50717219999933,
+    "maxDeploymentSeconds": 18.783600900002057
+  },
+  "k3s": {
+    "attempts": 10,
+    "complete": 10,
+    "valid": 10,
+    "sent": 34549,
+    "failed": 0,
+    "delayed": 0,
+    "failureRatePercent": 0.0,
+    "delayedRatePercent": 0.0,
+    "zeroImpactRuns": 10,
+    "p99": 107.48729999613715,
+    "medianDeploymentSeconds": 34.54663900000014,
+    "minDeploymentSeconds": 34.46216209999693,
+    "maxDeploymentSeconds": 34.57791060000454
+  },
+  "bluegreen": {
+    "attempts": 10,
+    "complete": 10,
+    "valid": 10,
+    "sent": 39389,
+    "failed": 0,
+    "delayed": 0,
+    "failureRatePercent": 0.0,
+    "delayedRatePercent": 0.0,
+    "zeroImpactRuns": 10,
+    "p99": 108.61030000523897,
+    "medianDeploymentSeconds": 39.25452464999762,
+    "minDeploymentSeconds": 37.97738869999739,
+    "maxDeploymentSeconds": 40.661596400001145
+  },
+  "rolling": {
+    "attempts": 10,
+    "complete": 10,
+    "valid": 10,
+    "sent": 40072,
+    "failed": 0,
+    "delayed": 0,
+    "failureRatePercent": 0.0,
+    "delayedRatePercent": 0.0,
+    "zeroImpactRuns": 10,
+    "p99": 107.97820000152569,
+    "medianDeploymentSeconds": 39.97441065000021,
+    "minDeploymentSeconds": 39.49407739999879,
+    "maxDeploymentSeconds": 40.76836049999838
+  }
+}

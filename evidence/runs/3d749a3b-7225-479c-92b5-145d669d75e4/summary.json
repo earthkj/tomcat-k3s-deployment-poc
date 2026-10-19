@@ -1,0 +1,99 @@
+{
+  "warmup": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 104.66900000028545,
+    "p99_ms": 105.72899999533547,
+    "max_ms": 133.20769999700133
+  },
+  "before": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.59299999981886,
+    "p99_ms": 106.93690000334755,
+    "max_ms": 110.06980000092881
+  },
+  "during": {
+    "scheduled": 3986,
+    "sent": 3986,
+    "normal": 3986,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.9253999988432,
+    "p99_ms": 109.56459999579238,
+    "max_ms": 118.0711000051815
+  },
+  "after": {
+    "scheduled": 500,
+    "sent": 500,
+    "normal": 500,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 104.04939999716589,
+    "p99_ms": 109.94819999905303,
+    "max_ms": 113.46079999930225
+  },
+  "overall": {
+    "scheduled": 4986,
+    "sent": 4986,
+    "normal": 4986,
+    "delayed": 0,
+    "failed": 0,
+    "unsent": 0,
+    "failureRatePercent": 0.0,
+    "p95_ms": 103.88090000196826,
+    "p99_ms": 109.57579999376321,
+    "max_ms": 118.0711000051815
+  },
+  "loadValid": true,
+  "events": [
+    {
+      "event": "start",
+      "offset": 0.00032980000105453655,
+      "utc": "2026-10-17T11:53:29.545179+00:00",
+      "rps": 100
+    },
+    {
+      "event": "deploy_start",
+      "offset": 10.000238900000113
+    },
+    {
+      "event": "deploy_end",
+      "offset": 49.85695560000022
+    },
+    {
+      "event": "send_stop",
+      "offset": 54.857198799996695
+    },
+    {
+      "event": "collection_end",
+      "offset": 54.95670719999907
+    }
+  ],
+  "transport": "HTTP/1.1, fresh TCP per request, no retries or redirects",
+  "baselineValid": true,
+  "deploymentComplete": true,
+  "liveMonitorHealthy": true,
+  "protocol": {
+    "rps": 100,
+    "warmupSeconds": 5,
+    "baselineSeconds": 5,
+    "postDeploySeconds": 5,
+    "thresholdMs": 300,
+    "requestTimeoutSeconds": 30
+  }
+}

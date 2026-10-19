@@ -1,0 +1,47 @@
+{
+  "attempts": 9,
+  "backgroundOnly": true,
+  "probeExcludedFromLatencyMetrics": true,
+  "cases": {
+    "sequential_stop": {
+      "runs": 3,
+      "confirmedProbeRuns": 0,
+      "normal": 5398,
+      "delayed": 518,
+      "backgroundSent": 5916,
+      "inFlightReplayedBackgroundRequests": 0,
+      "newRequestsAfterExclude": 0,
+      "newRequestsOnExcludedTarget": 0,
+      "newRequestsCompletedOnSurvivor": 0,
+      "delayedWithWorkerChange": 202,
+      "delayedWithServerSpanOver300Ms": 290,
+      "delayedWithBothMarkers": 0,
+      "delayedWithoutEitherMarker": 26
+    },
+    "sigkill": {
+      "runs": 3,
+      "confirmedProbeRuns": 3,
+      "normal": 2469,
+      "delayed": 967,
+      "backgroundSent": 3436,
+      "inFlightReplayedBackgroundRequests": 13,
+      "newRequestsAfterExclude": 0,
+      "newRequestsOnExcludedTarget": 0,
+      "newRequestsCompletedOnSurvivor": 0,
+      "delayedWithWorkerChange": 967,
+      "delayedWithServerSpanOver300Ms": 0,
+      "delayedWithBothMarkers": 0,
+      "delayedWithoutEitherMarker": 0
+    },
+    "drain_stop": {
+      "runs": 3,
+      "confirmedProbeRuns": 3,
+      "normal": 5021,
+      "backgroundSent": 5021,
+      "inFlightReplayedBackgroundRequests": 0,
+      "newRequestsAfterExclude": 2955,
+      "newRequestsOnExcludedTarget": 0,
+      "newRequestsCompletedOnSurvivor": 2955
+    }
+  }
+}

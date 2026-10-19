@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1050" viewBox="0 0 1540 1050" role="img">
+<title>배포 아키텍처 비교</title>
+<rect width="100%" height="100%" fill="#f5f8fc"/>
+<text x="32" y="40" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="30" font-weight="700" fill="#172b42">배포 단계 비교</text>
+<text x="32" y="82" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="400" fill="#52657a">왼쪽에서 오른쪽으로 진행 · 준비 확인: 구성별 readiness·API 검사 · 드레이닝: 처리 중 요청 완료 대기</text>
+<rect x="24" y="145" width="1492" height="188" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="151" y="201" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="20" font-weight="700" fill="#172b42">Tomcat 순차 배포</text>
+<text x="151" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#2870ae">(현행)</text>
+<rect x="300" y="180" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="407.0" y="212.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">대상 1 중지</text>
+<text x="407.0" y="237.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">사전 유입 제외 없음</text>
+<text x="316" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">01</text>
+<polyline points="514,223 540,223" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="540,223 532.0,218.0 532.0,228.0" fill="#2870ae"/>
+<rect x="540" y="180" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="647.0" y="212.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">목표 버전 기동</text>
+<text x="647.0" y="237.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">컨테이너 재생성</text>
+<text x="556" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">02</text>
+<polyline points="754,223 780,223" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="780,223 772.0,218.0 772.0,228.0" fill="#2870ae"/>
+<rect x="780" y="180" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="887.0" y="212.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">준비 상태 확인</text>
+<text x="887.0" y="237.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">직접 readiness 확인</text>
+<text x="796" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">03</text>
+<polyline points="994,223 1020,223" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1020,223 1012.0,218.0 1012.0,228.0" fill="#2870ae"/>
+<rect x="1020" y="180" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1127.0" y="212.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">대상 2 반복</text>
+<text x="1127.0" y="237.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">같은 순서로 교체</text>
+<text x="1036" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">04</text>
+<polyline points="1234,223 1260,223" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1260,223 1252.0,218.0 1252.0,228.0" fill="#2870ae"/>
+<rect x="1260" y="180" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1367.0" y="212.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">앞단 응답 검증</text>
+<text x="1367.0" y="237.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">목표 버전 확인</text>
+<text x="1276" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">05</text>
+<text x="300" y="300" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">교체 중 한 대가 서비스를 담당 · 재시도 이후 최종 클라이언트 응답을 측정</text>
+<rect x="24" y="356" width="1492" height="188" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="151" y="412" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="20" font-weight="700" fill="#172b42">k3s 컨테이너 롤링</text>
+<rect x="300" y="391" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="407.0" y="423.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">새 Pod A′ 생성</text>
+<text x="407.0" y="448.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">A/B는 기존 v1 · 신규는 v2</text>
+<text x="316" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">01</text>
+<polyline points="514,434 540,434" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="540,434 532.0,429.0 532.0,439.0" fill="#2870ae"/>
+<rect x="540" y="391" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="647.0" y="423.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">준비 상태 확인</text>
+<text x="647.0" y="448.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">readiness · 5초 준비 유지</text>
+<text x="556" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">02</text>
+<polyline points="754,434 780,434" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="780,434 772.0,429.0 772.0,439.0" fill="#2870ae"/>
+<rect x="780" y="391" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="887.0" y="423.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">기존 Pod A 종료</text>
+<text x="887.0" y="448.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">A′ 준비 후 종료 시작</text>
+<text x="796" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">03</text>
+<polyline points="994,434 1020,434" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1020,434 1012.0,429.0 1012.0,439.0" fill="#2870ae"/>
+<rect x="1020" y="391" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1127.0" y="423.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">Pod B → B′ 교체</text>
+<text x="1127.0" y="448.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">같은 절차 · 종료 중 공존</text>
+<text x="1036" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">04</text>
+<polyline points="1234,434 1260,434" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1260,434 1252.0,429.0 1252.0,439.0" fill="#2870ae"/>
+<rect x="1260" y="391" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1367.0" y="423.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">롤아웃 완료 확인</text>
+<text x="1367.0" y="448.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">A′/B′ v2 · A/B 종료</text>
+<text x="1276" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">05</text>
+<text x="300" y="511" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">정상 Pod 2개 · 신규 Pod와 종료 중 Pod가 일시 공존 · 전체 Pod 수 3개 상한을 뜻하지 않음</text>
+<rect x="24" y="567" width="1492" height="188" rx="12" fill="white" stroke="#d6e0ea" stroke-width="1.4"/>
+<text x="151" y="623" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="20" font-weight="700" fill="#172b42">Tomcat 롤링</text>
+<text x="151" y="655" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#2870ae">추가 인스턴스 방식</text>
+<rect x="300" y="602" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="407.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">대체 1대 준비</text>
+<text x="407.0" y="659.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">기동 · readiness · API</text>
+<text x="316" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">01</text>
+<polyline points="514,645 540,645" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="540,645 532.0,640.0 532.0,650.0" fill="#2870ae"/>
+<rect x="540" y="602" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="647.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">새 대상 유입 투입</text>
+<text x="647.0" y="659.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">JK Status · Active</text>
+<text x="556" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">02</text>
+<polyline points="754,645 780,645" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="780,645 772.0,640.0 772.0,650.0" fill="#2870ae"/>
+<rect x="780" y="602" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="887.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">기존 1대 유입 제외</text>
+<text x="887.0" y="659.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">JK Status · 드레이닝</text>
+<text x="796" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">03</text>
+<polyline points="994,645 1020,645" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1020,645 1012.0,640.0 1012.0,650.0" fill="#2870ae"/>
+<rect x="1020" y="602" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1127.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">기존 종료 후 반복</text>
+<text x="1127.0" y="659.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">다음 대체 인스턴스 준비</text>
+<text x="1036" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">04</text>
+<polyline points="1234,645 1260,645" fill="none" stroke="#2870ae" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1260,645 1252.0,640.0 1252.0,650.0" fill="#2870ae"/>
+<rect x="1260" y="602" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1367.0" y="634.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">앞단 응답 검증</text>
+<text x="1367.0" y="659.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">목표 버전 · 유입 대상</text>
+<text x="1276" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#2870ae">05</text>
+<text x="300" y="722" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">정상 실행 2대 · 배포 중 최대 3대 · 두 대를 한 그룹으로 동시 전환하지 않음</text>
+<rect x="24" y="778" width="1492" height="188" rx="12" fill="white" stroke="#9bcabd" stroke-width="1.4"/>
+<text x="151" y="834" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="20" font-weight="700" fill="#172b42">Tomcat 롤링</text>
+<text x="151" y="866" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="16" font-weight="400" fill="#147d68">기존 인스턴스 · 최종 제안</text>
+<rect x="300" y="813" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="407.0" y="845.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">기존 1대 유입 제외</text>
+<text x="407.0" y="870.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">JK Status · Stopped</text>
+<text x="316" y="796" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">01</text>
+<polyline points="514,856 540,856" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="540,856 532.0,851.0 532.0,861.0" fill="#147d68"/>
+<rect x="540" y="813" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="647.0" y="845.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">진행 요청 드레이닝</text>
+<text x="647.0" y="870.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">양쪽 Apache busy=0 확인</text>
+<text x="556" y="796" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">02</text>
+<polyline points="754,856 780,856" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="780,856 772.0,851.0 772.0,861.0" fill="#147d68"/>
+<rect x="780" y="813" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="887.0" y="845.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">교체 · 준비 확인</text>
+<text x="887.0" y="870.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">재생성 · readiness · API</text>
+<text x="796" y="796" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">03</text>
+<polyline points="994,856 1020,856" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1020,856 1012.0,851.0 1012.0,861.0" fill="#147d68"/>
+<rect x="1020" y="813" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1127.0" y="845.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">유입 복귀 후 반복</text>
+<text x="1127.0" y="870.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">JK Status · Active</text>
+<text x="1036" y="796" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">04</text>
+<polyline points="1234,856 1260,856" fill="none" stroke="#147d68" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1260,856 1252.0,851.0 1252.0,861.0" fill="#147d68"/>
+<rect x="1260" y="813" width="214" height="86" rx="12" fill="#edf5fd" stroke="#9ebfdd" stroke-width="1.4"/>
+<text x="1367.0" y="845.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="17" font-weight="700" fill="#172b42">앞단 응답 검증</text>
+<text x="1367.0" y="870.0" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="14" font-weight="400" fill="#52657a">목표 버전 · 유입 대상</text>
+<text x="1276" y="796" text-anchor="middle" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="12" font-weight="700" fill="#147d68">05</text>
+<text x="300" y="933" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">앱 인스턴스 2대 이내 · 교체 중 한 대가 전체 트래픽 처리 · 추가 장애 여유 감소</text>
+<text x="32" y="1010" text-anchor="start" dominant-baseline="middle" font-family="Malgun Gothic,Noto Sans CJK KR,sans-serif" font-size="15" font-weight="400" fill="#52657a">제어 조건: 두 Apache의 상태 변경은 순차 적용 · 드레인 확인은 busy=0 연속 2초 · 자동 롤백은 검증 범위 밖</text>
+</svg>

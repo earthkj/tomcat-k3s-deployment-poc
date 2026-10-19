@@ -1,0 +1,11 @@
+{
+  "case": "sequential_stop",
+  "run": 2,
+  "rps": 100,
+  "probeId": null,
+  "probeHoldTargetMs": 0,
+  "thresholdMs": 300,
+  "clientRetries": 0,
+  "error": null,
+  "probeExcludedFromBackgroundMetrics": true
+}

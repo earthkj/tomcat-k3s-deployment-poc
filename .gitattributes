@@ -1,0 +1,4 @@
+# Preserve the exact measured source bytes and evidence hashes on checkout.
+* -text
+*.gz -diff
+*.png -diff

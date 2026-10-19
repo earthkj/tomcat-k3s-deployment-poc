@@ -1,0 +1,160 @@
+{
+  "case": "sigkill",
+  "run": 1,
+  "background": {
+    "normal": 861,
+    "delayed": 319
+  },
+  "successfulChangedWorkerRequests": 333,
+  "inFlightReplayedRequests": 6,
+  "inFlightReplayedBackgroundRequests": 5,
+  "delayedChangedWorkerBackgroundRequests": 319,
+  "probe": {
+    "requestId": "probe-647250ea8ad947bc9d2245977b0a9dec",
+    "clientCalls": 1,
+    "clientSuccess": true,
+    "clientElapsedMs": 794.8679000000993,
+    "clientInstance": "tomcat2",
+    "tomcatTrace": [
+      {
+        "event": "BEGIN",
+        "wall_ms": "1792417843456",
+        "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+        "instance": "tomcat1",
+        "active": "6",
+        "source": "tomcat1"
+      },
+      {
+        "event": "BEGIN",
+        "wall_ms": "1792417844143",
+        "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+        "instance": "tomcat2",
+        "active": "7",
+        "source": "tomcat2"
+      },
+      {
+        "event": "END",
+        "wall_ms": "1792417844244",
+        "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+        "instance": "tomcat2",
+        "active": "11",
+        "status": "200",
+        "elapsed_ms": "100.959855",
+        "source": "tomcat2"
+      }
+    ],
+    "apacheAccess": [
+      {
+        "wall_ms": "1792417843456",
+        "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+        "status": "200",
+        "duration_us": "788449",
+        "first": "tomcat1",
+        "last": "tomcat2",
+        "first_busy": "6",
+        "last_busy": "6",
+        "first_errors": "1",
+        "last_errors": "0",
+        "source": "apache1"
+      }
+    ],
+    "haproxyAccess": [
+      {
+        "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+        "status": "200",
+        "server": "apache1",
+        "retries": "0",
+        "queue_ms": "0",
+        "connect_ms": "0",
+        "response_ms": "789",
+        "active_ms": "789",
+        "source": "haproxy"
+      }
+    ],
+    "oneFrontRequestNoRetry": true,
+    "killRequestWallMs": 1792417843952.8699,
+    "targetBeginBeforeKill": true,
+    "confirmed": true
+  },
+  "error": null,
+  "examples": [
+    {
+      "wall_ms": "1792417843456",
+      "id": "probe-647250ea8ad947bc9d2245977b0a9dec",
+      "status": "200",
+      "duration_us": "788449",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "6",
+      "last_busy": "6",
+      "first_errors": "1",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417844009",
+      "id": "bg-eadee29d45094de4a513ff9f2c87f610",
+      "status": "200",
+      "duration_us": "235948",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "5",
+      "last_busy": "5",
+      "first_errors": "2",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417843968",
+      "id": "bg-113e5b6e2c324327a7778e5ecde999ac",
+      "status": "200",
+      "duration_us": "276320",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "4",
+      "last_busy": "4",
+      "first_errors": "3",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417843934",
+      "id": "bg-4521a4d4d9f149199c0f8bd4a1cb274e",
+      "status": "200",
+      "duration_us": "313098",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "3",
+      "last_busy": "4",
+      "first_errors": "4",
+      "last_errors": "0",
+      "source": "apache1"
+    },
+    {
+      "wall_ms": "1792417843986",
+      "id": "bg-deb1452fb5624fcdb7cbedadf8513441",
+      "status": "200",
+      "duration_us": "258466",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "4",
+      "last_busy": "5",
+      "first_errors": "1",
+      "last_errors": "0",
+      "source": "apache2"
+    },
+    {
+      "wall_ms": "1792417843951",
+      "id": "bg-83d10a2c1c1241eda3c2d119d42dbe5a",
+      "status": "200",
+      "duration_us": "293519",
+      "first": "tomcat1",
+      "last": "tomcat2",
+      "first_busy": "3",
+      "last_busy": "4",
+      "first_errors": "2",
+      "last_errors": "0",
+      "source": "apache2"
+    }
+  ]
+}

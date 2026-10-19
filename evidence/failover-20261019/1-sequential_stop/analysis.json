@@ -1,0 +1,15 @@
+{
+  "case": "sequential_stop",
+  "run": 1,
+  "background": {
+    "normal": 1778,
+    "delayed": 166
+  },
+  "successfulChangedWorkerRequests": 713,
+  "inFlightReplayedRequests": 0,
+  "inFlightReplayedBackgroundRequests": 0,
+  "delayedChangedWorkerBackgroundRequests": 67,
+  "probe": {},
+  "error": null,
+  "examples": []
+}
